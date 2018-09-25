@@ -1,436 +1,269 @@
-
-/* =================================================================== 
- *
- *  
- *  ------------------------------------------------------------------
- *
- *  TOC:
- *  01. webfonts and iconfonts import statements
- *  02. common and reusable theme styles
- *  03. navigation styles
- *  04. header banner styles
- *  05. Recipe styles
- *  06. Recipe grid styles
- *  07. NewsLetter styles
- *  08. footer Styles
- *
- * =================================================================== */
- 
- /* ===================================================================
- *  01. webfonts and iconfonts 
- *
- * ------------------------------------------------------------------- */
-
- @import url('https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900');
-
-
-
-
-
- /* ===================================================================
- *  02. common and reusable theme styles
- *
- * ------------------------------------------------------------------- */
-
-
- * {margin: 0px;padding: 0px;box-sizing: border-box;}
-.grilled { background-color: #f6f6f6; color: #555; font-family: 'Roboto', sans-serif; text-rendering: optimizeLegibility; width:100%;}
-.grilled__btn {width: 200px;padding: 10px 0; border-radius: 5px;text-align: center;letter-spacing: 5px;cursor: pointer;outline: none;font-weight: bold;font-size: 18px;border: 1px solid #ccc;}
-.invalid {border:3px solid red;color: white;}
-.error {color: #ddd;}
-.grilled__col-3 {width: 25%;float: left;}
-.grilled__col-3--recipe{width: 20%;float: left;margin-right: 40px;}
-.grilled__col-7 {width: 70%;float: right;}
-.grilled-row {margin-left : 95px;margin-right : 95px;}
-.grilled-header, .grilled-recipe, .grilled-recipe__main-container, .grilled-newsletter, .grilled-footer__information{clear:both;}
-.grilled__h1 {color: #fff;font-size: 30px;font-family: Roboto-Light; }
-.grilled__h3 {color: #fff;font-family: 'Roboto', sans-serif;font-size : 20px;font-weight: 700;letter-spacing: 0.15px;margin-bottom: 13px;}
-.grilled__p {color: #fff;font-family: Roboto-Light; font-size: 14px;}
-.grilled__grid {padding: 1%;}
-.grilled--mtl{margin-top: 52px;}
-.grilled-active{font-weight: 700;}
-
-
-/* ===================================================================
- *  03. Navigation styles
- *
- * ------------------------------------------------------------------- */
-
-.grilled-navigation {margin: 0 auto;padding: 10px 0 0px 40px;} 
-.navigation__header-logo {max-width: 100%;height: auto !important;float: left;margin-top: 1.75%;position: absolute;z-index: 501;}
-.navigation__header-logo-text {display: inline-block;color: #E9474B;font-size: 20px;margin:4% 4% 0 8%;font-weight: 700;font-family: 'Roboto', sans-serif;}
-.grilled-navigation__navbar--ul {float: right;margin: 4% 0% 0 0;}
-.grilled-navigation__navbar--li {display: inline-block;margin-right: 88px;}
-.grilled-navigation__navbar--a {color: #4A4A4A;text-decoration: none;text-transform: uppercase;font-size: 16px;cursor: pointer;font-family: 'Roboto', sans-serif;letter-spacing: 0.3px;}
-.grilled-top-nav__icon{font-size:15px;display:none;}
-.grilled--m0{display: inline-block;margin-right:0;}
-
-/* ===================================================================
- *  04. Header Banner Styles
- *
- * ------------------------------------------------------------------- */
-
-
-.grilled-header {width: 100%;margin-top: 26px;float:left;position: relative}
-.grilled-header__left-content {position: absolute;width:100%;}
-.grilled-header__right-content-button--arrow { position: relative;padding-left: 8px;}
-.grilled-header__left-content-img{height: 520px;width: 100%;max-width: 1846px;}
-.grilled-header__right-content {float: right;width: 386px;height: 520px;padding-left:37px;background-color: #e9474b;position: relative;}
-.grilled-header__right-content-button {width: 169px;border-radius: 4px;background-color: #ffffff;margin:0 180px 32px 0;color: #4a4a4a;font-family: Roboto;font-size: 18px;font-weight: 700; letter-spacing: 0.13px;}
-.grilled-header__right-content-h1 {padding: 12px 0 7px 0;color: #fff;font-size: 40px;font-weight: 700;letter-spacing: 0.3px;}
-.grilled-header__right-content-h3 {padding: 43px 0 0 0 ;color: #fff;font-size: 18px;font-weight: 400;font-family: 'Roboto', sans-serif;letter-spacing: 0.3px;}
-.grilled-header__right-content-p {width: 326px;color: #ffffff;font-family: 'Roboto', sans-serif;font-weight: 400;line-height: 26px;letter-spacing: 0.3px;font-size: 16px;padding: 0 23px 33px 0;}
-
-/* ===================================================================
- *  05. Recipe styles
- *
- * ------------------------------------------------------------------- */
-
-.grilled-recipe{width: 100%;float: left;background: #f6f6f6;}
-.grilled-recipe__heading {margin: 51px 0px 41px 91px;font-size: 40px;font-weight: 700;letter-spacing: 0.3px;}
-.grilled-recipe__accordion  {width :90%;margin: -1px 5% 0px 5%;padding: 26px;float: left;background:rgba(233, 71, 75, 0.9)}
-.grilled-recipe__filter-btn {width: 76%;border-radius: 4px 4px 0 0;background-color: rgba(233, 71, 75, 0.9);float: left;color: #fff;border: 0px;border-bottom: 1px solid #fff;padding: 15px 111px 34px 15px;font-size: 16px;;;font-weight: 700;letter-spacing: 0.14px; font-family: 'Roboto', sans-serif;}
-.recipe--mll {margin-left: 5%;}
-.grilled-recipe__accordion--padding{padding-left:20px}
-.grilled-recipe__filter-img{ position: absolute;padding: 10px 13px 42px 90px;}
-.grilled-recipe__accordion--border{border-right: 1px solid white;}
-.grilled-recipe__filter-sort-by{float:left;margin: 10px 10px 0px 20px;letter-spacing: 0.14px;}
-.grilled-recipe__filter-sort-by-btn {position:relative;float: left;color: #2f363e;font-family: 'Roboto', sans-serif;font-size: 16px;font-weight: 700;letter-spacing: 0.14px;margin: 0px 0px 0px 21px;padding: 15px 72px 16px 20px;width: 100%;border-radius: 4px;border: 2px solid #2f363e;background-color: #ffffff;width:100% ; height:auto;max-width: 192px;}
-.grilled-recipe__filter-sort-by-btn-txt{float:left;}
-.grilled-recipe__filter-sort-by-btn-img{position: absolute;top:19px;right:18px}
-.grilled-recipe__filter-search {font-size: 18px;font-weight: 700;letter-spacing: 0.18px;float : right; margin : 0 94px 24px 0;}
-.grilled-recipe__filter-search-icon {position: relative;width: 25px; }
-.grilled-recipe__filter-vertical-line{position: relative;left: 268px;bottom : 197px;width: 0;height: 193px;border: 1px solid #ffffff;}
-.grilled-recipe__accordion-list-label {display: block; position: relative;padding-left: 35px;margin-bottom: 12px;cursor: pointer;font-size: 18px;-webkit-user-select: none;-moz-user-select: none;-ms-user-select: none;user-select: none;color: #fff;-webkit-user-select: none;-moz-user-select: none;-ms-user-select: none;user-select: none;line-height: 30px;letter-spacing: 0.14px;}
-.grilled-recipe__accordion-heading{margin-bottom: 15px;}
-.grilled-recipe__accordion-list-lbl-chkbox{position: absolute;opacity: 0;cursor: pointer;}
-.grilled-recipe__accordion-list-lbl-chkmark {position: absolute;top: 0;left: 0;height: 25px;width: 25px;background-color: #fff;border-radius: 50%;}
-.grilled-recipe__accordion-list-lbl-chkbox :checked ~ .grilled-recipe__accordion-list-lbl-chkmark {background-color: #fff;
-}
-.grilled-recipe__accordion-list-lbl-chkmark:after {content:"";position: absolute;display: none;}
-.grilled-recipe__accordion-list-lbl-chkbox:checked ~ .grilled-recipe__accordion-list-lbl-chkmark:after {display: block;}
-.grilled-recipe__accordion-list-label .grilled-recipe__accordion-list-lbl-chkmark:after {left: 9px;top: 5px;width: 5px;height: 10px;border: solid #000;border-width: 0 3px 3px 0;-webkit-transform: rotate(45deg);-ms-transform: rotate(45deg);
-transform: rotate(45deg)}
-
-/* ===================================================================
- *  06. Recipe Grid Styles
- *
- * ------------------------------------------------------------------- */
-
-
- .recipe__image {max-width: 100%;height: auto;}
- .recipe__list {float : left;width:22%;}
- .grilled-recipe__main-container {padding: 3%}
- .recipe__list-container {margin: 1.75vw 0 1.75vw 2vw;padding: 0px;background: #ffffff}
- .recipe__upper {padding: 0.75vw; height:13vw; 	}
- .recipe__date {float:left;font-size: 0.5rem;color:#4A4A4A;}
- .recipe__place {float:right;font-size: 0.5rem;color:#4A4A4A;}
- .recipe__list-content {margin-top: 1vw;color: #4a4a4a;font-family: 'Roboto', sans-serif;font-size: 1.563rem;font-weight: 300;letter-spacing: 0.19px;padding:9% 1% 40% 2%}
-
-/* ===================================================================
- *  07. Newsletter Styles
- *
- * ------------------------------------------------------------------- */
-
-
-.grilled-newsletter {padding: 45px 45px 0px 60px;background: #e9474b;}
-.grilled-news__header {margin: 10px 10px 10px 10px;text-align: left;color: #fff;}
-.grilled-news__header-h1 {font-size: 40px;letter-spacing: 0.52px;}
-.grilled-news__header-p {width: 504px;line-height: 25px;font-size: 18px;letter-spacing: 0.23px;padding-top:7px;}
-.grilled-news__section {width: 100%;margin: 25px 0;}
-.grilled-news__section-input {-webkit-appearance: none;-moz-appearance: none;appearance: none;border: 0px;font-size: 18px;padding: 12px 8px;outline: none;border-radius: 5px;width: 90%;box-sizing: border-box;margin-top: 10px;color: #979797;}
-.news__inline-label {margin-bottom: 10px;color: #fff;font-size: 18px;}
-.news__inline-list {width: 25%;float: left;}
-.news__remove {margin-bottom:39px;margin-top: 45px;color: #fff;font-weight: bold;font-size: 18px;text-align: center;cursor: pointer;padding-left:14px;}
-.news__hr { display: block;margin-top: 31px;margin-bottom: 25px;width:100%;margin-right: auto;border-style: inset;height: 1px;border: 1px solid #ffffff;} 	
-.news__inline-list-delete{padding-right: 14px;}
-.news__line {display: block;border: 1px solid #ccc;width: 100%;float: left;margin-top: 20px;margin-bottom: 30px;}
-.news__align {text-align: center;clear: both;}
-.btn__send {width: 183px;height: 50px; border-radius: 4px; background-color: #ffffff;margin: 65px auto;letter-spacing: 0.23px;color: #4a4a4a;font-weight : 700;font-size: 18px;}
-.news__align-img{padding-left:9px;}
-.btn__add {width: 200px; height: 50px; border-radius: 4px; border: 1px solid #ffffff; color: #fff; background:transparent;margin-top: 30px;margin-left: 25px;letter-spacing: 0.23px;font-size:18px;}
-.news_hidden {display: none;}
-.news__hide-message {color: #fff;font-size: 18px;}
-
-/* ===================================================================
- *  08. Footer styles
- *
- * ------------------------------------------------------------------- */
-
-
-.grilled-footer__information {margin: 10px 10px 10px 10px;float: left;padding: 45px;}
-.grilled-footer__information-history {width: 70%;float: left;}
-.grilled-footer__information-place{width: 30%;float: right;}
-.grilled-footer__h3{color: #4a4a4a;font-size: 20px;font-weight: 700;letter-spacing: 0.26px;margin-bottom: 14px;	}
-.grilled-footer__para{color: #4a4a4a;font-size: 14px;font-weight: 300;letter-spacing: 0.18px;margin-bottom: 14px;}
-.grilled-footer__para-red{font-size: 14px;font-weight: 700;letter-spacing: 0.18px;color: #e9474b;margin-bottom: 14px;}
-.grilled-footer__hr{display : none;}
-
-
-
- 
-/* ===================================================================
- *  Media Queries
- *
- * ------------------------------------------------------------------- */
-
- @media (min-width: 320px) and (max-width: 480px)  { /* smartphones, iPhone, portrait 480x320 phones */ 
-	/* ===================================================================
- *  01. Navigation styles
- *
- * ------------------------------------------------------------------- */
- .navigation__header-logo-text {margin-left:105px;margin-top:10%}
- .grilled-navigation {padding: 8px 0px 0px 10px}
- .grilled-navigation__navbar--ul .grilled-navigation__navbar--a {display: none;}
- .grilled-top-nav__icon {cursor:pointer;display: block; position: absolute;top: 51px;right: 18px;font-size:25px }
- .navigation__navbar--responsive .grilled-top-nav__icon {position: absolute;top: 51px;right: 58px;}
-.navigation__navbar--responsive .grilled-navigation__navbar--a {float: none;display: block;text-align: left;}
- .grilled-navigation__navbar--li { margin-left: 0px; margin-top: 15px ;float: left; width: 100%;}
- .navigation__navbar--responsive{margin:0 0 0 108px}
-
-
-/* ===================================================================
- *  02. Header Banner styles
- *
- * ------------------------------------------------------------------- */
-
- .grilled-header__left-content ,.grilled-header__right-content,.grilled__col-7,.recipe__list,.grilled-footer__information-history,.grilled-footer__information-place { width: 100%;}
- .grilled-header__right-content {height:395px}
- .grilled-header__left-content-img{float:left;width:100%}
- .grilled-footer__hr{display : block}
- .grilled-header{margin:0}
- 
-
- /* ===================================================================
-*  03. Recipe styles
+/* 
+*  TOC:
+*  01. webfonts and iconfonts import statements
+*  02. common and reusable theme styles
+*  03. navigation styles
+*  04. header banner styles
+*  05. Recipe styles
+*  06. Recipe grid styles
+*  07. NewsLetter styles
+*  08. footer Styles
 *
-* ------------------------------------------------------------------- */
-.grilled-recipe__filter-search-text{display:none;}
-.recipe__upper{height:23vw}
+*/
+/*  01. webfonts and iconfonts  */
+@font-face {font-family: 'Roboto';src:url('fonts/Roboto-Thin.eot');src: url('fonts/Roboto-Thin.eot?#iefix') format('embedded-opentype'),url('fonts/Roboto-Thin.woff2') format('woff2'),url('fonts/Roboto-Thin.woff') format('woff'),url('fonts/Roboto-Thin.ttf') format('truetype'),url('fonts/Roboto-Thin.svg#Roboto') format('svg');font-weight: 100;font-style: normal;}
+@font-face {font-family: 'Roboto-Thin';src:  url('fonts/Roboto-Thin.eot');src:  url('fonts/Roboto-Thin.eot?#iefix')format('embedded-opentype'),url('fonts/Roboto-Thin.woff2') format('woff2'),url('fonts/Roboto-Thin.woff') format('woff'),url('fonts/Roboto-Thin.ttf') format('truetype'),url('fonts/Roboto-Thin.svg#Roboto') format('svg');} 
+@font-face {font-family: 'Roboto';src:  url('fonts/Roboto-ThinItalic.eot');src:  url('fonts/Roboto-ThinItalic.eot?#iefix') format('embedded-opentype'),url('fonts/Roboto-ThinItalic.woff2') format('woff2'),url('fonts/Roboto-ThinItalic.woff') format('woff'),url('fonts/Roboto-ThinItalic.ttf') format('truetype'),url('fonts/Roboto-ThinItalic.svg#Roboto') format('svg');font-weight: 100;font-style: italic;}
+@font-face {font-family: 'Roboto-ThinItalic';src:  url('fonts/Roboto-ThinItalic.eot');src:url('fonts/Roboto-ThinItalic.eot?#iefix') format('embedded-opentype'),url('fonts/Roboto-ThinItalic.woff2') format('woff2'),url('fonts/Roboto-ThinItalic.woff') format('woff'),url('fonts/Roboto-ThinItalic.ttf') format('truetype'),url('fonts/Roboto-ThinItalic.svg#Roboto') format('svg');}
+@font-face {font-family: 'Roboto';src:url('fonts/Roboto-Light.eot');src:url('fonts/Roboto-Light.eot?#iefix') format('embedded-opentype'),url('fonts/Roboto-Light.woff2') format('woff2'),url('fonts/Roboto-Light.woff') format('woff'),url('fonts/Roboto-Light.ttf') format('truetype'),url('fonts/Roboto-Light.svg#Roboto') format('svg');font-weight: 300;font-style: normal;}
+@font-face {font-family: 'Roboto-Light';src:  url('fonts/Roboto-Light.eot');src:url('fonts/Roboto-Light.eot?#iefix') format('embedded-opentype'),url('fonts/Roboto-Light.woff2') format('woff2'),url('fonts/Roboto-Light.woff') format('woff'),url('fonts/Roboto-Light.ttf') format('truetype'),url('fonts/Roboto-Light.svg#Roboto') format('svg');}
+@font-face {font-family: 'Roboto';src:  url('fonts/Roboto-LightItalic.eot');src:  url('fonts/Roboto-LightItalic.eot?#iefix') format('embedded-opentype'),url('fonts/Roboto-LightItalic.woff2') format('woff2'),url('fonts/Roboto-LightItalic.woff') format('woff'),url('fonts/Roboto-LightItalic.ttf') format('truetype'),
+url('fonts/Roboto-LightItalic.svg#Roboto') format('svg');font-weight:300;font-style: italic;}
+@font-face {font-family: 'Roboto-LightItalic';src:  url('fonts/Roboto-LightItalic.eot');src:  url('fonts/Roboto-LightItalic.eot?#iefix')format('embedded-opentype'),url('fonts/Roboto-LightItalic.woff2') format('woff2'),url('fonts/Roboto-LightItalic.woff') format('woff'),url('fonts/Roboto-LightItalic.ttf') format('truetype'),url('fonts/Roboto-LightItalic.svg#Roboto')format('svg');}
+@font-face {font-family: 'Roboto';src:  url('fonts/Roboto-Regular.eot');
+src:  url('fonts/Roboto-Regular.eot?#iefix') format('embedded-opentype'),url('fonts/Roboto-Regular.woff2') format('woff2'),url('fonts/Roboto-Regular.woff') format('woff'),url('fonts/Roboto-Regular.ttf') format('truetype'),url('fonts/Roboto-Regular.svg#Roboto') format('svg');font-weight: 400;font-style: normal;}
+/*   02. common and reusable theme styles */
+* {margin: 0px;padding: 0px;box-sizing: border-box;font-family:'Roboto'}
+.btn {width: 200px;padding: 10px 0; border-radius: 5px;text-align: center;letter-spacing: 5px;cursor: pointer;outline: none;font-weight: bold;font-size: 18px;border: 1px solid #ccc}
+.invalid {border:3px solid red;color: white}
+.error {color: #ddd}
+.col-7 {width: 70%;float: right}
+.header, .recipe, .newsletter, .footer, .accordion, navigation{clear:both}
+.padding {padding: 1%}
+.active{font-weight: 700}
+.hidden{visibility: hidden}
+body {overflow-x: hidden;width: 100%}
+/*  03. Navigation styles */
+.navigation {margin: 0 auto;padding: 10px 0 0px 40px;} 
+.navigation__logo {max-width: 100%;height: auto !important;float: left;margin-top: 1.75%;position: absolute;z-index: 501;}
+.navigation__heading {display: inline-block;color: #E9474B;font-size: 20px;margin:4% 4% 0 8%;font-weight: 700;font-family: 'Roboto'}
+.navigation__ul {float: right;margin: 4% 0% 0 0;}
+.navigation__li {display: inline-block;margin-right: 88px;}
+.navigation__link {color: #4A4A4A;text-decoration: none;text-transform: uppercase;font-size: 16px;cursor: pointer;font-family: 'Roboto';letter-spacing: 0.3px;}
+.navigation__toggleicon{font-size:15px;display:none;}
+.navigation__margin0{display: inline-block;margin-right:0;}
+/*  04. Header Banner Styles */
+.header {width: 100%;margin-top: 26px;float:left;position: relative}
+.header__left {position: absolute;width:100%;}
+.header__btn-arrow { position: relative;padding-left: 8px;}
+.header__bannerimg{height: 520px;width: 100%;max-width: 1846px;}
+.header__right {float: right;width: 386px;height: 520px;padding-left:37px;background-color: #e9474b;position: relative;}
+.header__btn {width: 169px;border-radius: 4px;background-color: #ffffff;color: #4a4a4a;font-family: Roboto;font-size: 18px;font-weight: 700; letter-spacing: 0.13px;}
+.header__h1 {padding: 12px 0 7px 0;color: #fff;font-size: 40px;font-weight: 700;letter-spacing: 0.3px;}
+.header__h3 {padding: 43px 0 0 0 ;color: #fff;font-size: 18px;font-weight: 400;font-family: 'Roboto';letter-spacing: 0.3px;}
+.header__p {width: 326px;color: #ffffff;font-family: 'Roboto';font-weight: 400;line-height: 26px;letter-spacing: 0.3px;font-size: 16px;padding: 0 23px 33px 0;}
+/*  05. Accordion styles */
+.accordion{width: 100%;float: left;background: #f6f6f6;}
+.accordion__heading {margin: 51px 0px 41px 91px;font-size: 40px;font-weight: 700;letter-spacing: 0.3px;}
+.accordion__list  {width :89%;margin: 0 5% 0px 5%;padding: 26px;float: left;background:rgba(233, 71, 75, 0.9)}
+.accordion__togglebtn {position:relative;width: 78%;border-radius: 4px 4px 0 0;background-color: rgba(233, 71, 75, 0.9);color: #fff;border: 0px;padding: 15px 111px 34px 15px;font-size: 18px;font-weight: 700;letter-spacing: 0.14px; font-family: 'Roboto', sans-serif;text-align: left}
+.accordion__mll {margin-left: 5%;}
+.accordion__toggleimg{ position: absolute;right:15px;}
+.accordion__border{border-right: 1px solid white;}
+.accordion__sortby{float:left;margin: 10px 10px 0px 20px;letter-spacing: 0.14px;}
+.accordion__sortbtn {position:relative;float: left;color: #2f363e;font-family: 'Roboto';font-size: 16px;font-weight: 700;letter-spacing: 0.14px;margin: 0px 0px 0px 21px;padding: 15px 0px 16px 10px;width: 100%;border-radius: 4px;border: 2px solid #2f363e;background-color: #ffffff;width:100% ; height:auto;max-width: 192px;}
+.accordion__sortimg{position: absolute;top:19px;right:18px}
+.accordion__search {float : right}
+.accordion__search-icon {position: relative;width: 25px; }
+.accordion__lbl {display: block; position: relative;padding-left: 35px;margin-bottom: 12px;cursor: pointer;font-size: 18px;-webkit-user-select: none;-moz-user-select: none;-ms-user-select: none;user-select: none;color: #fff;-webkit-user-select: none;-moz-user-select: none;-ms-user-select: none;user-select: none;line-height: 30px;letter-spacing: 0.14px;}
+.accordion__h3 {color: #fff;font-family: 'Roboto';font-size : 20px;font-weight: 700;letter-spacing: 0.15px;margin-bottom: 15px}
+.accordion__chkbox{position: absolute;opacity: 0;cursor: pointer;}
+.accordion__chkmark {position: absolute;top: 0;left: 0;height: 25px;width: 25px;background-color: #fff;border-radius: 50%;}
+.accordion__chkbox :checked ~ .accordion__chkmark {background-color: #fff;}
+.accordion__chkmark:after {content:"";position: absolute;display: none;}
+.accordion__chkbox:checked ~ .accordion__chkmark:after {display: block;}
+.accordion__lbl .accordion__chkmark:after {left: 9px;top: 5px;width: 5px;height: 10px;border: solid #000;border-width: 0 3px 3px 0;-webkit-transform: rotate(45deg);-ms-transform: rotate(45deg);transform: rotate(45deg)}
+.accordion__search-txt{border:none;font-size: 18px;font-weight: 700;letter-spacing: 0.18px;background:transparent;vertical-align:super}
+.accordion__col3{width: 20%;float: left;margin-right: 40px;}
+/*  06. Recipe Grid Styles */
+.recipe__image {max-width: 100%;height: auto;}
+.recipe__card {float : left;width:22%;margin: 1.75vw 0 1.75vw 2vw}
+.recipe {padding: 3%;background: #f6f6f6;overflow:hidden}
+.recipe__upper {padding: 0.75vw; height:13vw; background: #ffffff;	}
+.recipe__date {float:left;font-size: 0.5rem;color:#4A4A4A;}
+.recipe__place {float:right;font-size: 0.5rem;color:#4A4A4A;}
+.recipe__list-content {margin-top: 1vw;color: #4a4a4a;font-family: 'Roboto';font-size: 1.563rem;font-weight: 300;letter-spacing: 0.19px;padding:9% 1% 40% 2%}
+.recipe__topnav{margin-left:2vw}
+.recipe__p{color: #e9474b;font-family: "Roboto Medium";font-size: 18px;font-weight: 500;letter-spacing: 0.19px;float:left}
+.recipe__navimg{float:left;padding:0.5% 0 0 1%}
+.recipe__col-3 {width: 25%;float: left;}
+/*  07. Newsletter Styles */
+.newsletter {padding: 45px 45px 0px 60px;background: #e9474b;}
+.newsletter__header {margin: 10px 10px 10px 10px;text-align: left;color: #fff;}
+.newsletter__h1 {font-size: 40px;letter-spacing: 0.52px;}
+.newsletter__p {width: 504px;line-height: 25px;font-size: 18px;letter-spacing: 0.23px;padding-top:7px;}
+.newsletter__fields {width: 100%;margin: 25px 0;}
+.newsletter__input {-webkit-appearance: none;-moz-appearance: none;appearance: none;border: 0px;font-size: 18px;padding: 12px 8px;outline: none;border-radius: 5px;width: 90%;box-sizing: border-box;margin-top: 10px;color: #979797;}
+.newsletter__lbl {margin-bottom: 10px;color: #fff;font-size: 18px;}
+.newsletter__element {width: 25%;float: left;}
+.newsletter__delete {margin-bottom:39px;margin-top: 45px;color: #fff;font-weight: bold;font-size: 18px;text-align: center;cursor: pointer;padding-left:14px;}
+.newsletter__hr { display: block;margin-top: 31px;margin-bottom: 25px;width:100%;margin-right: auto;border-style: inset;height: 1px;border: 1px solid #ffffff;} 	
+.newsletter__delete-img{padding-right: 14px;}
+.news__line {display: block;border: 1px solid #ccc;width: 100%;float: left;margin-top: 20px;margin-bottom: 30px}
+.news__align {text-align: center;clear: both}
+.newsletter__sendbtn {width: 183px;height: 50px; border-radius: 4px; background-color: #ffffff;margin: 65px auto;letter-spacing: 0.23px;color: #4a4a4a;font-weight : 700;font-size: 18px}
+.newsletter__sendimg{padding-left:9px}
+.newsletter__addbtn {width: 200px; height: 50px; border-radius: 4px; border: 1px solid #ffffff; color: #fff; background:transparent;margin-top: 30px;margin-left: 25px;letter-spacing: 0.23px;font-size:18px}
+.news_hidden {display: none}
+.newsletter__hide-message {color: #fff;font-size: 18px}
+/* 08. Footer styles*/
+.footer {margin: 10px 10px 10px 10px;float: left;padding: 45px;}
+.footer__history {width: 70%;float: left;}
+.footer__info{width: 30%;float: right;}
+.footer__right{width:21%;float:right}
+.footer__h3{color: #4a4a4a;font-size: 20px;font-weight: 700;letter-spacing: 0.26px;margin-bottom: 14px;	}
+.footer__para{color: #4a4a4a;font-size: 14px;font-weight: 300;letter-spacing: 0.18px;margin-bottom: 14px;}
+.footer__para-red{font-size: 14px;font-weight: 700;letter-spacing: 0.18px;color: #e9474b;margin-bottom: 14px;}
+.footer__hr{display : none;}
+.footer__col-3 {width: 25%;float: left;}
+/*   Media Queries  */
+@media (max-width: 1200px) {
+/*   01. Navigation styles */
+.navigation__heading{margin: 4% 4% 0 10%;}
+.navigation__li{margin-right: 40px}
+/* 02. Header Banner styles*/
+.header__left,.footer__history { width: 100%;}
+.header__bannerimg{float:left;width:100%}
+/*  03. Recipe Grid styles*/
+.recipe {padding: 10px 17px 10px 19px}
+.recipe__upper{height:14vw}
 .recipe__list-content{font-size: 1.36rem}
-.grilled-recipe__main-container{padding: 10px 15px 10px 0px}
-
- 
-	/* ===================================================================
- *  03. Recipe styles
- *
- * ------------------------------------------------------------------- */
-
-.recipe--mll {margin-left: 0%;}
+.recipe{padding: 10px 15px 10px 0px}
+.recipe__list-content{padding:9px;font-size:1.5rem}
+.recipe__card{margin: 1.75vw 0 1.75vw 2vw}
+/*  04. Footer styles */
+.footer__hr{display : block;}
+.footer__right{width:100%}}
+@media (max-width: 992px) {
+/*  01. Navigation styles */
+.navigation__heading {margin-left:112px;margin-top:7%}
+.navigation {padding: 8px 0px 0px 3px}
+.navigation__ul .navigation__link {display: none;}
+.navigation__toggleicon {cursor: pointer;display: block; position: absolute;top: 51px;right: 58px; font-size:25px}
+.navigation__navbar--responsive .navigation__toggleicon {position: absolute;top: 51px;right: 58px;}
+.navigation__navbar--responsive .navigation__link {float: none;display: block;text-align: center;border-bottom: 1px solid black}
+.navigation__li { margin: 15px 0 0 0; width: 100%}
+/* 02. Header Banner styles */
+.header__left ,.col-7{ width: 100%;}
+/*   03. Accordion styles */
+.accordion__search-txt{display:none;}
+.accordion__mll {margin-left: 0%;}
+.accordion__togglebtn{width:39%}
+.col-7{width:100%; float:left}
+.accordion__sortby{margin-left:48px}
+.accordion__sortbtn{width:43%;margin:0;padding: 9px 0 11px 10px}
+.accordion__search-txt{display:block;float:right}
+.accordion__col3{width:43%}
+.accordion__sortimg{position: absolute;top:15px;right:18px }
+/*  04. Recipe Grid styles */
+.recipe__col-3 {width: 100%;margin: 2% 0 0 5%;}
+.recipe {padding: 10px 24px 10px 30px}
+.recipe__upper{height:14vw}
+.recipe__list-content{font-size: 1.36rem}
 .recipe__image {width:100%;}
-.grilled-recipe__filter-btn{padding: 15px 176px 24px 5px;width:90%}
-.grilled-recipe__accordion{margin: -6px 5% 0px 5%;}
-.grilled-recipe__accordion--border{border-right:none;border-bottom: 1px solid white;}
-.grilled-recipe__filter-img{padding: 10px 0px 61px 148px}
-.grilled-recipe__accordion--padding{padding-left: 0%}
-.grilled__col-7{width:100%; float:left}
-.grilled-recipe__filter-sort-by{margin-left:30px}
-.grilled-recipe__filter-sort-by-btn{width:43%;margin:0;padding: 9px 72px 11px 20px}
-.grilled-recipe__filter-search{margin : 10px 30px }
-.grilled-recipe__filter-search-text{display: none;float:right}
-.recipe__list-content{padding:9px;font-size:1.2rem}
-.recipe__list{width:100%}
-.grilled__col-3--recipe{width:100%}
-.recipe__list-container{margin:0}
-.grilled-recipe__filter-sort-by-btn-img{position: absolute;top:15px;right:18px }
-
- /* ===================================================================
- *  04. navigation styles
- *
- * ------------------------------------------------------------------- */
-
-
-
-    /* ===================================================================
- *  05. Grid styles
- *
- * ------------------------------------------------------------------- */
-.grilled__col-3 {width: 100%;margin: 2% 0 0 5%;}
-.grilled__col-3--recipe{width: 100%;float: left;margin-right: 40px;}
-.grilled-recipe__main-container {padding: 10px 17px 10px 19px}
-    
-    /* ===================================================================
- *  06. Newsletter styles
- *
- * ------------------------------------------------------------------- */
-.news {padding: 20px;margin: 25px auto 0;}
-.grilled-news__header-p {width: 100%;}
-.news__inline-list {width: 100%;margin: 5px 0;}
-.grilled-news__section {margin-top: 10px;}
-.grilled-news__section-input {-webkit-appearance: none;-moz-appearance: none;appearance: none;width: 100%;box-sizing: border-box}
-.news__remove {text-align: left;height: 30px;}
-.btn__send {margin-top: 10px;height: 50px;width: 100%;}
-.btn__add {margin: 0px;height: 50px;width: 100%;}
-}
-
-
-
-
-
-@media (min-width: 481px) and (max-width: 767px)  {
-
-	/* ===================================================================
- *  01. Navigation styles
- *
- * ------------------------------------------------------------------- */
-
-.navigation__header-logo-text {margin-left:105px;margin-top:10%}
-.grilled-navigation {padding: 10px 20px 0px 40px;}
-.grilled-navigation__navbar--ul .grilled-navigation__navbar--a {display: none;}
-.grilled-top-nav__icon {cursor: pointer;float: right;display: block;position: absolute;top: 51px;right: 58px;font-size:25px }
-.navigation__navbar--responsive .grilled-top-nav__icon {position: absolute;top: 51px;right: 58px;}
-.navigation__navbar--responsive .grilled-navigation__navbar--a {float: none;display: block;text-align: left;}
-.grilled-navigation__navbar--li { margin-left: 0px; margin-top: 15px ;float: left; width: 100%;}
+.recipe__list-content{padding:9px;font-size:1.80rem}
+.recipe__card{width:46%}
+/* 05. footer styles */
+.footer__col-3{width:100%}
+.footer__right{width:100%}}
+@media (max-width: 768px)  {
+/* 01. Navigation styles */
+.navigation__heading {margin-left:105px;margin-top:10%}
+.navigation {padding: 10px 20px 0px 40px;}
+.navigation__ul .navigation__link {display: none;}
+.navigation__toggleicon {cursor: pointer;float: right;display: block;position: absolute;top: 51px;right: 58px;font-size:25px }
+.navigation__navbar--responsive .navigation__toggleicon {position: absolute;top: 51px;right: 58px;}
+.navigation__navbar--responsive .navigation__link {float: none;display: block;text-align: left;}
+.navigation__li { margin-left: 0px; margin-top: 15px ;float: left; width: 100%;}
 .navigation__navbar--responsive{margin:0 0 0 108px}
-
-	/* ===================================================================
- *  02. Header Banner styles
- *
- * ------------------------------------------------------------------- */
-
- .grilled-header__left-content ,.grilled-header__right-content,.grilled__col-7,.recipe__list,.grilled-footer__information-history,.grilled-footer__information-place { width: 100%;}
- .grilled-header__right-content {height:395px}
- .grilled-header__left-content-img{float:left;width:100%}
- .grilled-footer__hr{display : block;}
-    
-	/* ===================================================================
- *  03. Recipe styles
- *
- * ------------------------------------------------------------------- */
-
-.recipe--mll {margin-left: 0%;}
+/* 02. Header Banner styles */
+.header__left ,.header__right,.col-7,.recipe__card,.footer__history,.footer__info { width: 100%;}
+.header__right {height:395px}
+.header__bannerimg{float:left;width:100%}
+/* 03. Accordion styles */
+.accordion__mll {margin-left: 0%;}
+.accordion__togglebtn{ width:89%}
+.accordion__border{border-right:none;border-bottom: 1px solid white;}
+.col-7{width:100%; float:left}
+.accordion__sortby{margin-left:30px}
+.accordion__sortbtn{width:50%;margin:0}
+.accordion__search-txt{display: block;float:right}
+.accordion__sortimg{position: absolute;top:19px;right:18px }
+.hidden{display:none}
+.accordion__h3{padding-top:20px}
+/*   04. Recipe Grid styles */
+.recipe__col-3 {width: 100%;margin: 2% 0 0 5%;}
+.accordion__col3{width: 100%;float: left;}
+.accordion__list{padding-top:0}
+.recipe {padding: 10px 12px 10px 23px}
 .recipe__image {width:100%;}
-.grilled-recipe__filter-btn{padding: 15px 214px 24px 5px; width:90%}
-.grilled-recipe__accordion{margin: -6px 5% 0px 5%;}
-.grilled-recipe__accordion--border{border-right:none;border-bottom: 1px solid white;}
-.grilled-recipe__filter-img{padding: 10px 0px 61px 200px}
-.grilled-recipe__accordion--padding{padding-left: 0%}
-.grilled__col-7{width:100%; float:left}
-.grilled-recipe__filter-sort-by{margin-left:30px}
-.grilled-recipe__filter-sort-by-btn{width:50%;margin:0}
-.grilled-recipe__filter-search{margin : 10px 30px }
 .recipe__main-container {padding: 10px 40px 10px 0px}
-.grilled-recipe__filter-search-text{display: block;float:right}
 .recipe__list-content{padding:9px;font-size:1.2rem}
-.recipe__list{width:46%}
+.recipe__card{width:46%}
 .recipe__upper{height:17vw}
-.grilled-recipe__filter-sort-by-btn-img{position: absolute;top:19px;right:18px }
- /* ===================================================================
- *  04. navigation styles
- *
- * ------------------------------------------------------------------- */
-
-
-
-    /* ===================================================================
- *  05. Grid styles
- *
- * ------------------------------------------------------------------- */
-.grilled__col-3 {width: 100%;margin: 2% 0 0 5%;}
-.grilled__col-3--recipe{width: 100%;float: left;margin-right: 40px;}
-.grilled-recipe__main-container {padding: 10px 12px 10px 23px}
-    
-    /* ===================================================================
- *  06. Newsletter styles
- *
- * ------------------------------------------------------------------- */
+/*   05. Newsletter styles */
 .news {padding: 20px;margin: 25px auto 0;}
-.grilled-news__header-p {width: 100%;}
-.news__inline-list {width: 100%;margin: 5px 0;}
-.grilled-news__section {margin-top: 10px;}
-.grilled-news__section-input {-webkit-appearance: none;-moz-appearance: none;appearance: none;width: 100%;box-sizing: border-box}
-.news__remove {text-align: left;height: 30px;}
-.btn__send {margin-top: 10px;height: 50px;width: 100%;}
-.btn__add {margin: 0px;height: 50px;width: 100%;}
-}
-
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
-	/* ===================================================================
- *  06. Newsletter styles
- *
- * ------------------------------------------------------------------- */
-.grilled-navigation{overflow: hidden;}
-.grilled-news__header-p {width: 100%;}
-.news__inline-list {width: 50%;margin: 5px 0;}
-.btn__add {width: 90%;margin-left: 0px;}
-.news__remove {margin-top: 50px;height: 40px;}}
-
-
-@media (min-width: 768px) and (max-width: 1024px) {
- 	/* ===================================================================
- *  01. Navigation styles
- *
- * ------------------------------------------------------------------- */
- .navigation__header-logo-text {margin-left:112px;margin-top:7%}
- .grilled-navigation {padding: 8px 0px 0px 10px}
- .grilled-navigation__navbar--ul .grilled-navigation__navbar--a {display: none;}
- .grilled-top-nav__icon {cursor: pointer;display: block; position: absolute;top: 51px;right: 58px; font-size:25px}
- .navigation__navbar--responsive .grilled-top-nav__icon {position: absolute;top: 51px;right: 58px;}
-.navigation__navbar--responsive .grilled-navigation__navbar--a {float: none;display: block;text-align: left;}
- .grilled-navigation__navbar--li { margin-left: 0px; margin-top: 15px ;float: left; width: 100%;}
- .navigation__navbar--responsive{margin:0 0 0 108px}
-
-/* ===================================================================
- *  02. Header Banner styles
- *
- * ------------------------------------------------------------------- */
-
- .grilled-header__left-content ,.grilled-header__right-content,.grilled__col-7,.recipe__list,.grilled-footer__information-history,.grilled-footer__information-place { width: 100%;}
- .grilled-header__right-content {height:395px}
- .grilled-header__left-content-img{float:left;width:100%}
- .grilled-footer__hr{display : block;}
- .grilled-header{margin:0}
- 
-
- /* ===================================================================
-*  03. Recipe styles
-*
-* ------------------------------------------------------------------- */
-.grilled-recipe__filter-search-text{display:none;}
-.recipe__upper{height:23vw}
-.recipe__list-content{font-size: 1.36rem}
-.grilled-recipe__main-container{padding: 10px 15px 10px 0px}
-.recipe--mll {margin-left: 0%;}
+.newsletter__p {width: 100%;}
+.newsletter__element {width: 100%;margin: 5px 0;}
+.newsletter__fields {margin-top: 10px;}
+.newsletter__input {-webkit-appearance: none;-moz-appearance: none;appearance: none;width: 100%;box-sizing: border-box}
+.newsletter__delete {text-align: center;margin: 4% 0 2% 0;}
+.newsletter__sendbtn {margin-top: 10px;width: 30%;}
+.newsletter__addbtn {margin: 0px;width: 100%;margin: 4% 0 2% 0;}
+/*  06. footer styles */
+.footer__right{width:100%}
+.footer__hr{display : block;}
+.footer{padding:0}
+.footer__right{width:100%}}
+@media (max-width: 576px)   { 
+/*   01. Navigation styles */
+.navigation__heading {margin-left:105px;margin-top:10%}
+.navigation {padding: 8px 0px 0px 10px}
+.navigation__ul .navigation__link {display: none;}
+.navigation__toggleicon {cursor:pointer;display: block; position: absolute;top: 51px;right: 18px;font-size:25px }
+.navigation__navbar--responsive .navigation__toggleicon {position: absolute;top: 51px;right: 58px;}
+.navigation__navbar--responsive .navigation__link {float: none;display: block;text-align: center}
+.navigation__li { margin-left: 0px; margin-top: 15px ;float: left; width: 100%;}
+.navigation__navbar--responsive{margin:0 0 0 108px}
+/*   02. Header Banner styles */
+.header__left ,.header__right,.col-7,.recipe__card,.footer__history,.footer__info { width: 100%;}
+.header__right {height:395px}
+.header__bannerimg{float:left;width:100%}
+.header{margin:0}
+/*  03. Accordion styles */
+.accordion__search-txt{display:none;}
+.accordion__togglebtn{width:89%}
+.accordion__list{padding-top:0}
+.accordion__border{border-right:none;border-bottom: 1px solid white;}
+.accordion__sortby{margin-left:30px}
+.accordion__sortbtn{width:43%;margin:0;padding: 9px 0 11px 10px}
+.accordion__search-txt{display: none;float:right}
+.accordion__col3{width:100%}
+.accordion__sortimg{position: absolute;top:15px;right:18px }
+.accordion__search{padding:10px 38px 0 0}
+/* 04.Recipe Grid styles */
+.accordion__mll {margin-left: 0%;}
 .recipe__image {width:100%;}
-.grilled-recipe__filter-btn{padding: 15px 176px 24px 5px;width:48%}
-.grilled-recipe__accordion{margin: -6px 5% 0px 5%;}
-.grilled-recipe__accordion--border{border-right:none;border-bottom: 1px solid white;}
-.grilled-recipe__filter-img{padding: 10px 0px 61px 148px}
-.grilled-recipe__accordion--padding{padding-left: 0%}
-.grilled__col-7{width:100%; float:left}
-.grilled-recipe__filter-sort-by{margin-left:30px}
-.grilled-recipe__filter-sort-by-btn{width:43%;margin:0;padding: 9px 72px 11px 20px}
-.grilled-recipe__filter-search{margin : 10px 30px }
-.grilled-recipe__filter-search-text{display:block;float:right}
-.recipe__list-content{padding:9px;font-size:2.1rem}
-.recipe__list{width:46%}
-.grilled__col-3--recipe{width:100%}
-.recipe__list-container{margin: 1.75vw 0 1.75vw 2vw;}
-.grilled-recipe__filter-sort-by-btn-img{position: absolute;top:15px;right:18px }
-
-
-    /* ===================================================================
- *  04. Grid styles
- *
- * ------------------------------------------------------------------- */
-.grilled__col-3 {width: 100%;margin: 2% 0 0 5%;}
-.grilled__col-3--recipe{width: 100%;float: left;margin-right: 40px;}
-.grilled-recipe__main-container {padding: 10px 17px 10px 19px}
-    
-    /* ===================================================================
- *  05. Newsletter styles
- *
- * ------------------------------------------------------------------- */
+.recipe__upper{height:17vw}
+.recipe__list-content{font-size: 1.36rem}
+.recipe{padding: 10px 15px 10px 0px}
+.col-7{width:100%; float:left}
+.recipe__list-content{padding:9px;font-size:1.2rem}
+.recipe__card{width:100%;margin:0}
+.recipe__col-3 {width: 100%;margin: 2% 0 0 5%;}
+.accordion__col3{width: 100%;float: left;margin-right: 40px;}
+.recipe {padding: 10px 17px 10px 19px}
+/*  05. Newsletter styles */
 .news {padding: 20px;margin: 25px auto 0;}
-.grilled-news__header-p {width: 100%;}
-.news__inline-list {width: 100%;margin: 5px 0;}
-.grilled-news__section {margin-top: 10px;}
-.grilled-news__section-input {-webkit-appearance: none;-moz-appearance: none;appearance: none;width: 100%;box-sizing: border-box}
-.news__remove {text-align: left;height: 30px;}
-.btn__send {margin-top: 10px;height: 50px;width: 100%;}
-.btn__add {margin: 0px;height: 50px;width: 100%;}
-}
-
- 
- 
-	
+.newsletter__p {width: 100%;}
+.newsletter__element {width: 100%;margin: 5px 0;}
+.newsletter__fields {margin-top: 10px;}
+.newsletter__input {-webkit-appearance: none;-moz-appearance: none;appearance: none;width: 100%;box-sizing: border-box}
+.newsletter__delete {text-align:center;margin: 4% 0 2% 0}
+.newsletter__sendbtn {margin-top: 10px;width: 100%;}
+.newsletter__addbtn {margin: 0px;width: 100%;margin: 4% 0 2% 0;}
+/* 06. footer styles */
+.footer__right{width:100%}
+.footer__hr{display : block;}
+.footer{padding:0}
+.footer__right{width:100%}}

@@ -1,0 +1,127 @@
+ <!-- Recipe Accordion starts-->
+    <div class="accordion">
+      <h1 class="accordion__heading">Our Recipes
+      </h1>
+      <div class="accordion__filter">
+        <div class="col-7">
+          <span class="accordion__sortby">Sort by
+          </span>
+          <select class="accordion__sortbtn" id = "accordion__sortbtn">
+            <option value = "1">Newest first
+            </option>
+            <option value = "2">Oldest first
+            </option>
+          </select>
+          <div class="accordion__search">
+            <img src="images/search-button.png" class="accordion__search-icon" alt="Search">
+            <input class="accordion__search-txt" placeholder="Search recipe" />
+          </div>
+        </div>
+        <div class="recipe__col-3 accordion__mll ">
+          <button class="accordion__togglebtn" onclick="toggleAccordion()">Filter recipes by 
+            <img src="images/minus-icon.png" alt="Filter Dropdown"
+                 class="accordion__toggleimg" id="accordion__toggleimg">
+          </button>
+        </div>
+      </div>
+      <div class="accordion__list" id="filter-accordion-list">
+        <div class="accordion__col3 accordion__border">
+          <h3 class="accordion__h3">Food type:
+          </h3>
+          <label for="lbl-Appetisers" class="accordion__lbl">Appetisers
+            <input id="lbl-Appetisers" class="accordion__chkbox" type="checkbox" checked="checked">
+            <span class="accordion__chkmark">
+            </span>
+          </label>
+          <label for="lbl-Mains" class="accordion__lbl">Mains
+            <input id="lbl-Mains" class="accordion__chkbox" type="checkbox">
+            <span class="accordion__chkmark">
+            </span>
+          </label>
+          <label for="lbl-Desserts" class="accordion__lbl">Desserts
+            <input id="lbl-Desserts" class="accordion__chkbox" type="checkbox">
+            <span class="accordion__chkmark">
+            </span>
+          </label>
+          <label for="lbl-Special" class="accordion__lbl">Special Occasions
+            <input id="lbl-Special" class="accordion__chkbox" type="checkbox">
+            <span class="accordion__chkmark">
+            </span>
+          </label> 
+        </div>
+        <div class="accordion__col3">
+          <h3 class="accordion__h3"> Nationality:
+          </h3>
+          <label class="accordion__lbl"> Italian (34)
+            <input class="accordion__chkbox" type="checkbox" checked="checked">
+            <span class="accordion__chkmark">
+            </span>
+          </label>
+          <label class="accordion__lbl"> French (30)
+            <input class="accordion__chkbox" type="checkbox">
+            <span class="accordion__chkmark">
+            </span>
+          </label>
+          <label class="accordion__lbl">
+            Spanish (22)
+            <input class="accordion__chkbox" type="checkbox">
+            <span class="accordion__chkmark">
+            </span>
+          </label>
+          <label class="accordion__lbl">Peruvian (3)
+            <input class="accordion__chkbox" type="checkbox">
+            <span class="accordion__chkmark">
+            </span>
+          </label>
+        </div>
+        <div class="accordion__col3">
+          <h3 class="accordion__h3 hidden">Food type:
+          </h3>
+          <label class="accordion__lbl"> Chinese (18)
+            <input class="accordion__chkbox" type="checkbox" checked="checked">
+            <span class="accordion__chkmark">
+            </span>
+          </label>
+          <label class="accordion__lbl">Indian (13)
+            <input class="accordion__chkbox" type="checkbox">
+            <span class="accordion__chkmark">
+            </span>
+          </label>
+          <label class="accordion__lbl">Thai (10)
+            <input class="accordion__chkbox" type="checkbox">
+            <span class="accordion__chkmark">
+            </span>
+          </label>
+          <label class="accordion__lbl">Norwegian (4)
+            <input class="accordion__chkbox" type="checkbox">
+            <span class="accordion__chkmark">
+            </span>
+          </label>
+        </div>
+        <div class=" accordion__col3">
+          <h3 class="accordion__h3 hidden">Food type:
+          </h3>
+          <label class="accordion__lbl">Polish (2)
+            <input class="accordion__chkbox" type="checkbox" checked="checked">
+            <span class="accordion__chkmark">
+            </span>
+          </label>
+          <label class="accordion__lbl"> Danish (3)
+            <input class="accordion__chkbox" type="checkbox">
+            <span class="accordion__chkmark">
+            </span>
+          </label>
+          <label class="accordion__lbl">Belgian (7)
+            <input class="accordion__chkbox" type="checkbox">
+            <span class="accordion__chkmark">
+            </span>
+          </label>
+          <label class="accordion__lbl"> Persian (13)
+            <input class="accordion__chkbox" type="checkbox">
+            <span class="accordion__chkmark">
+            </span>
+          </label>
+        </div>
+      </div>
+    </div>
+    <!-- Recipe Accordion ends-->
