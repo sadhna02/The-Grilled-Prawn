@@ -169,13 +169,12 @@ body {overflow-x: hidden;width: 100%}
 @media (max-width: 768px)  {
 /* 01. Navigation styles */
 .navigation__heading {margin-left:105px;margin-top:10%}
-.navigation {padding: 10px 20px 0px 40px;}
+.navigation {padding: 8px 0px 0px 3px;}
 .navigation__ul .navigation__link {display: none;}
-.navigation__toggleicon {cursor: pointer;float: right;display: block;position: absolute;top: 51px;right: 58px;font-size:25px }
+.navigation__toggleicon {cursor: pointer;display: block; position: absolute;top: 51px;right: 58px; font-size:25px}
 .navigation__navbar--responsive .navigation__toggleicon {position: absolute;top: 51px;right: 58px;}
-.navigation__navbar--responsive .navigation__link {float: none;display: block;text-align: left;}
+.navigation__navbar--responsive .navigation__link {float: none;display: block;text-align: center;border-bottom: 1px solid black}
 .navigation__li { margin-left: 0px; margin-top: 15px ;float: left; width: 100%;}
-.navigation__navbar--responsive{margin:0 0 0 108px}
 /* 02. Header Banner styles */
 .header__left ,.header__right,.col-7,.recipe__card,.footer__history,.footer__info { width: 100%;}
 .header__right {height:395px}
@@ -218,18 +217,17 @@ body {overflow-x: hidden;width: 100%}
 @media (max-width: 576px)   { 
 /*   01. Navigation styles */
 .navigation__heading {margin-left:105px;margin-top:10%}
-.navigation {padding: 8px 0px 0px 10px}
+.navigation {padding: 8px 0px 0px 3px;}
 .navigation__ul .navigation__link {display: none;}
-.navigation__toggleicon {cursor:pointer;display: block; position: absolute;top: 51px;right: 18px;font-size:25px }
-.navigation__navbar--responsive .navigation__toggleicon {position: absolute;top: 51px;right: 58px;}
-.navigation__navbar--responsive .navigation__link {float: none;display: block;text-align: center}
+.navigation__toggleicon {cursor: pointer;display: block; position: absolute;top: 51px;right: 19px; font-size:25px}
+.navigation__navbar--responsive .navigation__toggleicon {position: absolute;top: 39px;right: 19px;}
+.navigation__navbar--responsive .navigation__link {float: none;display: block;text-align: center;border-bottom: 1px solid black}
 .navigation__li { margin-left: 0px; margin-top: 15px ;float: left; width: 100%;}
-.navigation__navbar--responsive{margin:0 0 0 108px}
 /*   02. Header Banner styles */
 .header__left ,.header__right,.col-7,.recipe__card,.footer__history,.footer__info { width: 100%;}
 .header__right {height:395px}
 .header__bannerimg{float:left;width:100%}
-.header{margin:0}
+.header{margin-top:46px}
 /*  03. Accordion styles */
 .accordion__search-txt{display:none;}
 .accordion__togglebtn{width:89%}
