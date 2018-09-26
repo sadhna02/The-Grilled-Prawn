@@ -143,6 +143,7 @@ body {overflow-x: hidden;width: 100%}
 .navigation__navbar--responsive .navigation__toggleicon {position: absolute;top: 51px;right: 58px;}
 .navigation__navbar--responsive .navigation__link {float: none;display: block;text-align: center;border-bottom: 1px solid black}
 .navigation__li { margin: 15px 0 0 0; width: 100%}
+.navigation__navbar--responsive{padding-top:20px}
 /* 02. Header Banner styles */
 .header__left ,.col-7{ width: 100%;}
 /*   03. Accordion styles */
@@ -168,17 +169,19 @@ body {overflow-x: hidden;width: 100%}
 .footer__right{width:100%}}
 @media (max-width: 768px)  {
 /* 01. Navigation styles */
-.navigation__heading {margin-left:105px;margin-top:10%}
+.navigation__heading {margin-left:105px;}
 .navigation {padding: 8px 0px 0px 3px;}
 .navigation__ul .navigation__link {display: none;}
 .navigation__toggleicon {cursor: pointer;display: block; position: absolute;top: 51px;right: 58px; font-size:25px}
 .navigation__navbar--responsive .navigation__toggleicon {position: absolute;top: 51px;right: 58px;}
 .navigation__navbar--responsive .navigation__link {float: none;display: block;text-align: center;border-bottom: 1px solid black}
 .navigation__li { margin-left: 0px; margin-top: 15px ;float: left; width: 100%;}
+.navigation__navbar--responsive{padding-top:20px}
 /* 02. Header Banner styles */
 .header__left ,.header__right,.col-7,.recipe__card,.footer__history,.footer__info { width: 100%;}
 .header__right {height:395px}
 .header__bannerimg{float:left;width:100%}
+.header{margin-top: 52px;}
 /* 03. Accordion styles */
 .accordion__mll {margin-left: 0%;}
 .accordion__togglebtn{ width:89%}
@@ -219,7 +222,7 @@ body {overflow-x: hidden;width: 100%}
 .navigation__heading {margin-left:105px;margin-top:10%}
 .navigation {padding: 8px 0px 0px 3px;}
 .navigation__ul .navigation__link {display: none;}
-.navigation__toggleicon {cursor: pointer;display: block; position: absolute;top: 51px;right: 19px; font-size:25px}
+.navigation__toggleicon {cursor: pointer;display: block; position: absolute;top: 39px;right: 19px; font-size:25px}
 .navigation__navbar--responsive .navigation__toggleicon {position: absolute;top: 39px;right: 19px;}
 .navigation__navbar--responsive .navigation__link {float: none;display: block;text-align: center;border-bottom: 1px solid black}
 .navigation__li { margin-left: 0px; margin-top: 15px ;float: left; width: 100%;}
