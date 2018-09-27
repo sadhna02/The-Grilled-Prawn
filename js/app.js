@@ -32,8 +32,8 @@ surname: args[1],
 email: args[2]
 };
 if (list.childNodes.length >= rowItem) {
-document.getElementById('newsletter__form').classList.add("news_hidden");
-document.getElementById('newsletter__hide-message').classList.remove("news_hidden");
+document.getElementById('newsletter__form').classList.add("newsletter__msg");
+document.getElementById('newsletter__msg').classList.remove("newsletter__msg");
 } else {
 if (list.childNodes.length 
 <= rowItem) {
@@ -55,7 +55,7 @@ if (list.childNodes.length
   <input  class="newsletter__input" type="text"  name="newsletter__email" value= "${obj.email}" /> 
 </div>
 <div class="newsletter__element newsletter__delete"  onclick="deleteNewsList(this)" id="delete"> 
-  <img class="newsletter__delete-img" src="images/delete.png" alt="Remove"> Remove
+  <img class="newsletter__imgdel" src="images/delete.png" alt="Remove"> Remove
 </div>
 <hr class="newsletter__hr">`
 list.appendChild(row);
@@ -67,8 +67,8 @@ clearNewsField();
 const deleteNewsList = (value) => {
 if (ListCount 
 <= rowItem) {
-          document.getElementById('newsletter__form').classList.remove("news_hidden");
-          document.getElementById('newsletter__hide-message').classList.add("news_hidden");
+          document.getElementById('newsletter__form').classList.remove("newsletter__msg");
+          document.getElementById('newsletter__msg').classList.add("newsletter__msg");
           }
           if (value.id === deleteItem) value.parentElement.remove();
           }
