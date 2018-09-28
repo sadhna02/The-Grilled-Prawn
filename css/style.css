@@ -24,7 +24,7 @@ url('fonts/Roboto-LightItalic.svg#Roboto') format('svg');font-weight:300;font-st
 src:  url('fonts/Roboto-Regular.eot?#iefix') format('embedded-opentype'),url('fonts/Roboto-Regular.woff2') format('woff2'),url('fonts/Roboto-Regular.woff') format('woff'),url('fonts/Roboto-Regular.ttf') format('truetype'),url('fonts/Roboto-Regular.svg#Roboto') format('svg');font-weight: 400;font-style: normal;}
 /*   02. common and reusable theme styles */
 * {margin: 0px;padding: 0px;box-sizing: border-box;font-family:'Roboto'}
-body {overflow-x: hidden;width: 100%}
+ body {overflow-x: hidden;width: 100%;background-color: #f6f6f6}
 .btn--1 {width: 200px;padding: 10px 0; border-radius: 5px;text-align: center;letter-spacing: 5px;cursor: pointer;outline: none;font-weight: bold;font-size: 18px;border: 1px solid #ccc}
 .invalid {border:3px solid red;color: white}
 .error {color: #ddd}
@@ -38,7 +38,7 @@ body {overflow-x: hidden;width: 100%}
 .display--0{display:none}
 .clearfix{overflow: auto;}
 /*  03. Navigation styles */
-.navigation {margin: 0 auto;width:90%;padding:10px 0 0 0} 
+.navigation {margin: 0 auto;width:90%;background-color:#fff} 
 .navigation__logo{position:relative}
 .navigation__logoimg {max-width: 100%;height: auto !important;float: left;margin-top: 1.75%;position: absolute;z-index: 501;}
 .navigation__heading {position:absolute;float:right;color: #E9474B;font-size: 20px;margin:4% 4% 0 9%;font-weight: 700;}
@@ -57,7 +57,7 @@ body {overflow-x: hidden;width: 100%}
 .header__h3 {padding: 43px 0 0 0 ;color: #fff;font-size: 18px;font-weight: 400;font-family: 'Roboto';letter-spacing: 0.3px;}
 .header__p {width: 326px;color: #ffffff;font-family: 'Roboto';font-weight: 400;line-height: 26px;letter-spacing: 0.3px;font-size: 16px;padding: 0 23px 33px 0;}
 /*  05. Accordion styles */
-.accordion{width: 90%;background: #f6f6f6;margin:0 auto;overflow:hidden}
+.accordion{width: 90%;margin:0 auto;overflow:hidden}
 .accordion__filter{position: relative;}
 .accordion__heading {margin: 51px 0 41px 0;font-size: 40px;font-weight: 700;letter-spacing: 0.3px;}
 .accordion__list  {width :100%;padding: 26px 0 26px 0;float: left;background:rgba(233, 71, 75, 0.9)}
@@ -84,7 +84,7 @@ body {overflow-x: hidden;width: 100%}
 /*  06. Recipe Grid Styles */
 .recipe__image {max-width: 100%;height: auto;}
 .recipe__card { display: flex; padding:.5rem;-webkit-box-orient: vertical;-webkit-box-direction: normal;-ms-flex-direction: column;flex-direction: column;position: relative;}
-.recipe {background: #f6f6f6;display: grid;grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));width:90%;margin:0 auto;padding: 1rem 0 1rem 0;grid-gap: 1rem;grid-auto-rows: auto;}
+.recipe {display: grid;grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));width:90%;margin:0 auto;padding: 1rem 0 1rem 0;grid-gap: 1rem;grid-auto-rows: auto;}
 .recipe__upper {padding: 0.75vw;  background: #ffffff;  display: flex;-webkit-box-orient: vertical;-webkit-box-direction: normal;-ms-flex-direction: column;flex-direction: column;-webkit-box-flex: 1;-ms-flex: 1;flex: 1;	}
 .recipe__date {font-size: 0.5rem;color:#4A4A4A;}
 .recipe__place {font-size: 0.5rem;color:#4A4A4A;margin-left: 52%;}
@@ -206,10 +206,10 @@ body {overflow-x: hidden;width: 100%}
 .footer__right{width:100%}}
 @media (max-width: 576px)   { 
 /*   01. Navigation styles */
-.navigation__heading {margin: 12% 4% 0 30%;font-size:18px}
+.navigation__heading {margin: 11% 4% 0 24%;font-size:18px}
 .navigation__link {display: none;}
 .display--0{display:block}
-.navigation__toggleicon {cursor: pointer;display: block; position: absolute;top: 51px;right: 19px; font-size:25px}
+.navigation__toggleicon {cursor: pointer;display: block; position: absolute;top: 12%;right: 19px; font-size:25px}
 .navigation__navbar--responsive .navigation__toggleicon {position: absolute;top: 51px;right: 19px;}
 .navigation__navbar--responsive .navigation__link {float: none;display: block;text-align: center;border-bottom: 1px solid black}
 .navigation__li { margin-left: 0px; margin-top: 15px ;float: left; width: 100%;}
