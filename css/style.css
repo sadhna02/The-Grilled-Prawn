@@ -38,7 +38,7 @@ src:  url('fonts/Roboto-Regular.eot?#iefix') format('embedded-opentype'),url('fo
 .display--0{display:none}
 .clearfix{overflow: auto;}
 /*  03. Navigation styles */
-.navigation {margin: 0 auto;width:90%;background-color:#fff} 
+.navigation {margin: 0 auto;width:90%} 
 .navigation__logo{position:relative}
 .navigation__logoimg {max-width: 100%;height: auto !important;float: left;margin-top: 1.75%;position: absolute;z-index: 501;}
 .navigation__heading {position:absolute;float:right;color: #E9474B;font-size: 20px;margin:4% 4% 0 9%;font-weight: 700;}
@@ -123,7 +123,7 @@ src:  url('fonts/Roboto-Regular.eot?#iefix') format('embedded-opentype'),url('fo
 /*   Media Queries  */
 @media (max-width: 1200px) {
 /*   01. Navigation styles */
-.navigation__heading{font-size:19px;margin:4% 4% 0 11%;}
+.navigation__heading{font-size:19px;margin:4% 4% 0 12%;}
 .navigation__li{margin-right: 40px}
 /* 02. Header Banner styles*/
 .footer__history { width: 100%;}
@@ -134,12 +134,12 @@ src:  url('fonts/Roboto-Regular.eot?#iefix') format('embedded-opentype'),url('fo
 .footer__right{width:100%}}
 @media (max-width: 992px) {
 /*  01. Navigation styles */
-.navigation__heading {margin: 6% 4% 0 14%;}
+.navigation__heading {margin: 6% 4% 0 16%;}
 .navigation__ul {margin:0}
 .navigation__link {display: none;}
 .display--0{display:block}
-.navigation__toggleicon {cursor: pointer;display: block; position: absolute;top: 51px;right: 58px; font-size:25px}
-.navigation__navbar--responsive .navigation__toggleicon {position: absolute;top: 51px;right: 58px;}
+.navigation__toggleicon {cursor: pointer;display: block; position: absolute;top: 12%;right: 58px; font-size:25px}
+.navigation__navbar--responsive .navigation__toggleicon {position: absolute;top: 12%;right: 58px;}
 .navigation__navbar--responsive .navigation__link {float: none;display: block;text-align: center;border-bottom: 1px solid black}
 .navigation__li { margin: 15px 0 0 0; width: 100%}
 .navigation__navbar--responsive{padding-top:12%}
@@ -167,8 +167,8 @@ src:  url('fonts/Roboto-Regular.eot?#iefix') format('embedded-opentype'),url('fo
 .navigation__ul {margin:2% 0 0 0}
 .navigation__link {display: none;}
 .display--0{display:block}
-.navigation__toggleicon {cursor: pointer;display: block; position: absolute;top: 51px;right: 58px; font-size:25px}
-.navigation__navbar--responsive .navigation__toggleicon {position: absolute;top: 51px;right: 58px;}
+.navigation__toggleicon {cursor: pointer;display: block; position: absolute;top: 12%;right: 58px; font-size:25px}
+.navigation__navbar--responsive .navigation__toggleicon {position: absolute;top: 12%;right: 58px;}
 .navigation__navbar--responsive .navigation__link {float: none;display: block;text-align: center;border-bottom: 1px solid black}
 .navigation__li { margin-left: 0px; margin-top: 15px ;float: left; width: 100%;}
 /* 02. Header Banner styles */
@@ -210,7 +210,7 @@ src:  url('fonts/Roboto-Regular.eot?#iefix') format('embedded-opentype'),url('fo
 .navigation__link {display: none;}
 .display--0{display:block}
 .navigation__toggleicon {cursor: pointer;display: block; position: absolute;top: 12%;right: 19px; font-size:25px}
-.navigation__navbar--responsive .navigation__toggleicon {position: absolute;top: 51px;right: 19px;}
+.navigation__navbar--responsive .navigation__toggleicon {position: absolute;top: 12%;right: 19px;}
 .navigation__navbar--responsive .navigation__link {float: none;display: block;text-align: center;border-bottom: 1px solid black}
 .navigation__li { margin-left: 0px; margin-top: 15px ;float: left; width: 100%;}
 .navigation__navbar--responsive{margin:13% 0 0 0 }
