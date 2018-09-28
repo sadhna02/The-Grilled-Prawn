@@ -196,7 +196,7 @@ src:  url('fonts/Roboto-Regular.eot?#iefix') format('embedded-opentype'),url('fo
 .newsletter__element {width: 100%;margin: 5px 0;}
 .newsletter__fields {margin-top: 10px;}
 .newsletter__input {-webkit-appearance: none;-moz-appearance: none;appearance: none;width: 100%;box-sizing: border-box}
-.newsletter__delete {text-align: center;margin: 4% 0 2% 0;}
+.newsletter__delete {width: 100%;margin: 4% 0 2% 0;}
 .newsletter__sendbtn {margin-top: 10px;width: 30%;}
 .newsletter__addbtn {margin: 0px;width: 100%;margin: 4% 0 2% 0;}
 /*  06. footer styles */
@@ -241,7 +241,7 @@ src:  url('fonts/Roboto-Regular.eot?#iefix') format('embedded-opentype'),url('fo
 .newsletter__element {width: 100%;margin: 5px 0;}
 .newsletter__fields {margin-top: 10px;}
 .newsletter__input {-webkit-appearance: none;-moz-appearance: none;appearance: none;width: 100%;box-sizing: border-box}
-.newsletter__delete {text-align:center;margin-top:4%}
+.newsletter__delete {width: 100%;margin-top:4%}
 .newsletter__sendbtn {margin-top: 10px;width: 100%;}
 .newsletter__addbtn {margin: 0px;width: 100%;margin: 4% 0 2% 0;}
 /* 06. footer styles */
