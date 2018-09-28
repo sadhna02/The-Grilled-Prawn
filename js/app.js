@@ -2,7 +2,7 @@
 const navigation = () => {
 var x = document.getElementById("nav");
 if (x.className === "navigation__ul") {
-x.className = "navigation__navbar--responsive";
+x.className = "navigation__navbar--responsive clearfix";
 } else {
 x.classList = "navigation__ul";
 }
@@ -128,6 +128,8 @@ if (ListCount
                   });
                   //navigate to top
                   const returntop = () =>
-    {
-    scroll(0,0);
-    }
+                          {
+                                 scroll(0,0);
+                           }
+
+                           

@@ -24,47 +24,52 @@ url('fonts/Roboto-LightItalic.svg#Roboto') format('svg');font-weight:300;font-st
 src:  url('fonts/Roboto-Regular.eot?#iefix') format('embedded-opentype'),url('fonts/Roboto-Regular.woff2') format('woff2'),url('fonts/Roboto-Regular.woff') format('woff'),url('fonts/Roboto-Regular.ttf') format('truetype'),url('fonts/Roboto-Regular.svg#Roboto') format('svg');font-weight: 400;font-style: normal;}
 /*   02. common and reusable theme styles */
 * {margin: 0px;padding: 0px;box-sizing: border-box;font-family:'Roboto'}
- body {overflow-x: hidden;width: 100%}
+body {overflow-x: hidden;width: 100%}
 .btn--1 {width: 200px;padding: 10px 0; border-radius: 5px;text-align: center;letter-spacing: 5px;cursor: pointer;outline: none;font-weight: bold;font-size: 18px;border: 1px solid #ccc}
 .invalid {border:3px solid red;color: white}
 .error {color: #ddd}
-.col--7 {width: 70%;float: right}
-.header, .recipe, .newsletter, .footer, .accordion, navigation{clear:both}
+.col--7 {width: 72%;float: right}
+.header, .recipe, .newsletter, .footer, .accordion, .navigation, .navigation__navbar--responsive{clear:both}
 .padding--1 {padding: 1%}
 .active{font-weight: 700}
 .hidden{visibility: hidden}
 .margin--left {margin-left: 5%;}
-
+.border--right1{border-right: 1px solid white;}
+.display--0{display:none}
+.clearfix{overflow: auto;}
 /*  03. Navigation styles */
-.navigation {margin: 0 auto;padding: 10px 0 0px 40px;} 
-.navigation__logo {max-width: 100%;height: auto !important;float: left;margin-top: 1.75%;position: absolute;z-index: 501;}
-.navigation__heading {display: inline-block;color: #E9474B;font-size: 20px;margin:4% 4% 0 8%;font-weight: 700;font-family: 'Roboto'}
-.navigation__ul {float: right;margin: 4% 0% 0 0;}
+.navigation {margin: 0 auto;width:90%;padding:10px 0 0 0} 
+.navigation__logo{position:relative}
+.navigation__logoimg {max-width: 100%;height: auto !important;float: left;margin-top: 1.75%;position: absolute;z-index: 501;}
+.navigation__heading {position:absolute;float:right;color: #E9474B;font-size: 20px;margin:4% 4% 0 9%;font-weight: 700;}
+.navigation__ul {float: right;margin: 4% 0 0 0;}
 .navigation__li {display: inline-block;margin-right: 88px;}
 .navigation__link {color: #4A4A4A;text-decoration: none;text-transform: uppercase;font-size: 16px;cursor: pointer;font-family: 'Roboto';letter-spacing: 0.3px;}
-.navigation__toggleicon{font-size:15px;display:none;}
-.mar--0{display: inline-block;margin-right:0;}
+.navigation__toggleicon{font-size:15px;}
+.mar--0{margin-right:0;}
 /*  04. Header Banner Styles */
-.header {width: 100%;margin-top: 26px;float:left;position: relative}
-.header__left {position: absolute;width:100%;}
+.header {width: 100%;top:31px;float:left;position: relative}
 .header__rightarrow { position: relative;padding-left: 8px;}
-.header__bannerimg{height: 520px;width: 100%;max-width: 1846px;}
-.header__right {float: right;width: 386px;height: 520px;padding-left:37px;background-color: #e9474b;position: relative;}
+.header__bannerimg{width: 94%;float:left;max-width:100% !important;height:520px;display:block;}
+.header__right {float: left;width: 30%;height: 100%;padding-left:30px;background-color: #e9474b;position: absolute;right:0}
 .header__btn {width: 169px;border-radius: 4px;background-color: #ffffff;color: #4a4a4a;font-family: Roboto;font-size: 18px;font-weight: 700; letter-spacing: 0.13px;}
 .header__h1 {padding: 12px 0 7px 0;color: #fff;font-size: 40px;font-weight: 700;letter-spacing: 0.3px;}
 .header__h3 {padding: 43px 0 0 0 ;color: #fff;font-size: 18px;font-weight: 400;font-family: 'Roboto';letter-spacing: 0.3px;}
 .header__p {width: 326px;color: #ffffff;font-family: 'Roboto';font-weight: 400;line-height: 26px;letter-spacing: 0.3px;font-size: 16px;padding: 0 23px 33px 0;}
 /*  05. Accordion styles */
-.accordion{width: 100%;float: left;background: #f6f6f6;}
-.accordion__heading {margin: 51px 0px 41px 91px;font-size: 40px;font-weight: 700;letter-spacing: 0.3px;}
-.accordion__list  {width :89%;margin: 0 5% 0px 5%;padding: 26px;float: left;background:rgba(233, 71, 75, 0.9)}
-.accordion__togglebtn {position:relative;width: 78%;border-radius: 4px 4px 0 0;background-color: rgba(233, 71, 75, 0.9);color: #fff;border: 0px;padding: 15px 111px 34px 15px;font-size: 18px;font-weight: 700;letter-spacing: 0.14px; font-family: 'Roboto', sans-serif;text-align: left}
+.accordion{width: 90%;background: #f6f6f6;margin:0 auto;overflow:hidden}
+.accordion__filter{position: relative;}
+.accordion__heading {margin: 51px 0 41px 0;font-size: 40px;font-weight: 700;letter-spacing: 0.3px;}
+.accordion__list  {width :100%;padding: 26px 0 26px 0;float: left;background:rgba(233, 71, 75, 0.9)}
+.accordion__togglebtn {position:relative;width: 87%;border-radius: 4px 4px 0 0;background-color: rgba(233, 71, 75, 0.9);color: #fff;border: 0px;padding: 15px 111px 34px 15px;font-size: 18px;font-weight: 700;letter-spacing: 0.14px; font-family: 'Roboto', sans-serif;text-align: left}
 .accordion__toggleimg{ position: absolute;right:15px;}
-.border--right1{border-right: 1px solid white;}
-.accordion__sortby{float:left;margin: 10px 10px 0px 20px;letter-spacing: 0.14px;}
-.accordion__sortbtn {position:relative;float: left;color: #2f363e;font-family: 'Roboto';font-size: 16px;font-weight: 700;letter-spacing: 0.14px;margin: 0px 0px 0px 21px;padding: 15px 0px 16px 10px;width: 100%;border-radius: 4px;border: 2px solid #2f363e;background-color: #ffffff;width:100% ; height:auto;max-width: 192px;}
+.accordion__toggle {width: 28%;float: left;}
+.accordion__sortby{float:left;margin: 10px 10px 0px 0;letter-spacing: 0.14px;}
+.accordion__sortbtn {background:url('../images/down-arrow.png') no-repeat 90% 50% #fff; position:relative;float: left;color: #2f363e;font-size: 16px;font-weight: 700;letter-spacing: 0.14px;margin: 0px 0px 0px 21px;padding: 15px 0px 16px 10px;width: 100%;border-radius: 4px;border: 2px solid #2f363e;background-color: #ffffff; height:auto;max-width: 192px;}
+.accordion__sortbtn::-ms-expand {	display: none; }
+.accordion__sortbtn{-webkit-appearance: none;appearance: none;}
 .accordion__sortimg{position: absolute;top:19px;right:18px}
-.accordion__search {float : right}
+.accordion__search {float : right; padding-top:10px}
 .accordion__searchicon {position: relative;width: 25px; }
 .accordion__lbl {display: block; position: relative;padding-left: 35px;margin-bottom: 12px;cursor: pointer;font-size: 18px;-webkit-user-select: none;-moz-user-select: none;-ms-user-select: none;user-select: none;color: #fff;-webkit-user-select: none;-moz-user-select: none;-ms-user-select: none;user-select: none;line-height: 30px;letter-spacing: 0.14px;}
 .accordion__h3 {color: #fff;font-family: 'Roboto';font-size : 20px;font-weight: 700;letter-spacing: 0.15px;margin-bottom: 15px}
@@ -75,21 +80,21 @@ src:  url('fonts/Roboto-Regular.eot?#iefix') format('embedded-opentype'),url('fo
 .accordion__chkbox:checked ~ .accordion__chkmark:after {display: block;}
 .accordion__lbl .accordion__chkmark:after {left: 9px;top: 5px;width: 5px;height: 10px;border: solid #000;border-width: 0 3px 3px 0;-webkit-transform: rotate(45deg);-ms-transform: rotate(45deg);transform: rotate(45deg)}
 .accordion__searchtxt{border:none;font-size: 18px;font-weight: 700;letter-spacing: 0.18px;background:transparent;vertical-align:super}
-.accordion__col3{width: 20%;float: left;margin-right: 40px;}
+.accordion__col3{width: 22%;float: left;margin-left: 30px;}
 /*  06. Recipe Grid Styles */
 .recipe__image {max-width: 100%;height: auto;}
 .recipe__card { display: flex; padding:.5rem;-webkit-box-orient: vertical;-webkit-box-direction: normal;-ms-flex-direction: column;flex-direction: column;position: relative;}
-.recipe {background: #f6f6f6;display: grid;grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));padding: 1rem;grid-gap: 1rem;grid-auto-rows: auto;}
+.recipe {background: #f6f6f6;display: grid;grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));width:90%;margin:0 auto;padding: 1rem 0 1rem 0;grid-gap: 1rem;grid-auto-rows: auto;}
 .recipe__upper {padding: 0.75vw;  background: #ffffff;  display: flex;-webkit-box-orient: vertical;-webkit-box-direction: normal;-ms-flex-direction: column;flex-direction: column;-webkit-box-flex: 1;-ms-flex: 1;flex: 1;	}
 .recipe__date {font-size: 0.5rem;color:#4A4A4A;}
-.recipe__place {font-size: 0.5rem;color:#4A4A4A;margin-left: 68%;}
+.recipe__place {font-size: 0.5rem;color:#4A4A4A;margin-left: 52%;}
 .recipe__content {margin-top: 1vw;color: #4a4a4a;font-family: 'Roboto';font-size: 1.563rem;font-weight: 300;letter-spacing: 0.19px;}
 .recipe__topnav{margin-left:2vw}
 .recipe__p{color: #e9474b;font-family: "Roboto Medium";font-size: 18px;font-weight: 500;letter-spacing: 0.19px;float:left}
 .recipe__navimg{float:left;padding:0.5% 0 0 1%}
-.accordion__toggle {width: 25%;float: left;}
 /*  07. Newsletter Styles */
-.newsletter {padding: 45px 45px 0px 60px;background: #e9474b;}
+.newsletter {padding: 45px 0 0 0;background: #e9474b}
+.newsletter__content{width:90%;margin:0 auto}
 .newsletter__header {margin: 10px 10px 10px 10px;text-align: left;color: #fff;}
 .newsletter__h1 {font-size: 40px;letter-spacing: 0.52px;}
 .newsletter__p {width: 504px;line-height: 25px;font-size: 18px;letter-spacing: 0.23px;padding-top:7px;}
@@ -97,7 +102,7 @@ src:  url('fonts/Roboto-Regular.eot?#iefix') format('embedded-opentype'),url('fo
 .newsletter__input {-webkit-appearance: none;-moz-appearance: none;appearance: none;border: 0px;font-size: 18px;padding: 12px 8px;outline: none;border-radius: 5px;width: 90%;box-sizing: border-box;margin-top: 10px;color: #979797;}
 .newsletter__lbl {margin-bottom: 10px;color: #fff;font-size: 18px;}
 .newsletter__element {width: 25%;float: left;}
-.newsletter__delete {margin-bottom:39px;margin-top: 45px;color: #fff;font-weight: bold;font-size: 18px;text-align: center;cursor: pointer;padding-left:14px;}
+.newsletter__delete {background:none;border:none;margin-bottom:39px;margin-top: 45px;margin-left: 35px;color: #fff;font-weight: bold;font-size: 18px;text-align: center;cursor: pointer;padding-left:14px;}
 .newsletter__hr { display: block;margin-top: 31px;margin-bottom: 25px;width:100%;margin-right: auto;border-style: inset;height: 1px;border: 1px solid #ffffff;} 	
 .newsletter__imgdel{padding-right: 14px;}
 .newsletter__align {text-align: center;clear: both}
@@ -105,9 +110,8 @@ src:  url('fonts/Roboto-Regular.eot?#iefix') format('embedded-opentype'),url('fo
 .newsletter__sendimg{padding-left:9px}
 .newsletter__addbtn {width: 200px; height: 50px; border-radius: 4px; border: 1px solid #ffffff; color: #fff; background:transparent;margin-top: 30px;margin-left: 25px;letter-spacing: 0.23px;font-size:18px}
 .newsletter__msg {display: none;color: #fff;font-size: 18px}
-
 /* 08. Footer styles*/
-.footer {margin: 10px 10px 10px 10px;float: left;padding: 45px;}
+.footer {padding-top: 45px;width:90%;margin: 0 auto;}
 .footer__history {width: 70%;float: left;}
 .footer__info{width: 30%;float: right;}
 .footer__right{width:21%;float:right}
@@ -119,33 +123,29 @@ src:  url('fonts/Roboto-Regular.eot?#iefix') format('embedded-opentype'),url('fo
 /*   Media Queries  */
 @media (max-width: 1200px) {
 /*   01. Navigation styles */
-.navigation__heading{margin: 4% 4% 0 10%;}
+.navigation__heading{font-size:19px;margin:4% 4% 0 11%;}
 .navigation__li{margin-right: 40px}
 /* 02. Header Banner styles*/
-.header__left,.footer__history { width: 100%;}
-.header__bannerimg{float:left;width:100%}
+.footer__history { width: 100%;}
+.header__right{width:40%}
 /*  03. Recipe Grid styles*/
-.recipe {padding: 10px 17px 10px 19px}
-.recipe__upper{height:14vw}
 .recipe__content{font-size: 1.36rem}
-.recipe{padding: 10px 15px 10px 0px}
-.recipe__content{padding:9px;font-size:1.5rem}
-.recipe__card{margin: 1.75vw 0 1.75vw 2vw}
-/*  04. Footer styles */
 .footer__hr{display : block;}
 .footer__right{width:100%}}
 @media (max-width: 992px) {
 /*  01. Navigation styles */
-.navigation__heading {margin-left:112px;margin-top:7%}
-.navigation {padding: 8px 0px 0px 3px}
-.navigation__ul .navigation__link {display: none;}
+.navigation__heading {margin: 6% 4% 0 14%;}
+.navigation__ul {margin:0}
+.navigation__link {display: none;}
+.display--0{display:block}
 .navigation__toggleicon {cursor: pointer;display: block; position: absolute;top: 51px;right: 58px; font-size:25px}
 .navigation__navbar--responsive .navigation__toggleicon {position: absolute;top: 51px;right: 58px;}
 .navigation__navbar--responsive .navigation__link {float: none;display: block;text-align: center;border-bottom: 1px solid black}
 .navigation__li { margin: 15px 0 0 0; width: 100%}
-.navigation__navbar--responsive{padding-top:20px}
+.navigation__navbar--responsive{padding-top:12%}
 /* 02. Header Banner styles */
-.header__left ,.col--7{ width: 100%;}
+.col--7{ width: 100%;}
+.header__right{width:50%}
 /*   03. Accordion styles */
 .accordion__searchtxt{display:none;}
 .margin--left {margin-left: 0%;}
@@ -157,31 +157,24 @@ src:  url('fonts/Roboto-Regular.eot?#iefix') format('embedded-opentype'),url('fo
 .accordion__col3{width:43%}
 .accordion__sortimg{position: absolute;top:15px;right:18px }
 /*  04. Recipe Grid styles */
-.accordion__toggle {width: 100%;margin: 2% 0 0 5%;}
-.recipe {padding: 10px 24px 10px 30px}
-.recipe__upper{height:14vw}
+.accordion__toggle {width: 100%;margin-top:2%;}
 .recipe__content{font-size: 1.36rem}
-.recipe__image {width:100%;}
-.recipe__content{padding:9px;font-size:1.80rem}
-.recipe__card{width:46%}
-/* 05. footer styles */
 .footer__col3{width:100%}
 .footer__right{width:100%}}
 @media (max-width: 768px)  {
 /* 01. Navigation styles */
-.navigation__heading {margin-left:105px;}
-.navigation {padding: 8px 0px 0px 3px;}
-.navigation__ul .navigation__link {display: none;}
+.navigation__heading {margin: 8% 4% 0 19%;}
+.navigation__ul {margin:2% 0 0 0}
+.navigation__link {display: none;}
+.display--0{display:block}
 .navigation__toggleicon {cursor: pointer;display: block; position: absolute;top: 51px;right: 58px; font-size:25px}
 .navigation__navbar--responsive .navigation__toggleicon {position: absolute;top: 51px;right: 58px;}
 .navigation__navbar--responsive .navigation__link {float: none;display: block;text-align: center;border-bottom: 1px solid black}
 .navigation__li { margin-left: 0px; margin-top: 15px ;float: left; width: 100%;}
-.navigation__navbar--responsive{padding-top:20px}
 /* 02. Header Banner styles */
-.header__left ,.header__right,.col--7,.recipe__card,.footer__history,.footer__info { width: 100%;}
-.header__right {height:395px}
-.header__bannerimg{float:left;width:100%}
-.header{margin-top: 52px;}
+.col--7,.recipe__card,.footer__history,.footer__info { width: 100%;}
+.header__right{width:50%}
+.header{margin-top:46px}
 /* 03. Accordion styles */
 .margin--left {margin-left: 0%;}
 .accordion__togglebtn{ width:89%}
@@ -193,17 +186,12 @@ src:  url('fonts/Roboto-Regular.eot?#iefix') format('embedded-opentype'),url('fo
 .accordion__sortimg{position: absolute;top:19px;right:18px }
 .hidden{display:none}
 .accordion__h3{padding-top:20px}
-/*   04. Recipe Grid styles */
-.accordion__toggle {width: 100%;margin: 2% 0 0 5%;}
+.accordion__toggle {width: 100%;margin-top:2%}
 .accordion__col3{width: 100%;float: left;}
 .accordion__list{padding-top:0}
-.recipe {padding: 10px 12px 10px 23px}
-.recipe__image {width:100%;}
-.recipe__content{padding:9px;font-size:1.2rem}
-.recipe__card{width:46%}
-.recipe__upper{height:17vw}
+/*   04. Recipe Grid styles */
+.recipe__content{font-size:1.2rem}
 /*   05. Newsletter styles */
-.news {padding: 20px;margin: 25px auto 0;}
 .newsletter__p {width: 100%;}
 .newsletter__element {width: 100%;margin: 5px 0;}
 .newsletter__fields {margin-top: 10px;}
@@ -218,21 +206,20 @@ src:  url('fonts/Roboto-Regular.eot?#iefix') format('embedded-opentype'),url('fo
 .footer__right{width:100%}}
 @media (max-width: 576px)   { 
 /*   01. Navigation styles */
-.navigation__heading {margin-left:105px;margin-top:10%}
-.navigation {padding: 8px 0px 0px 3px;}
-.navigation__ul .navigation__link {display: none;}
-.navigation__toggleicon {cursor: pointer;display: block; position: absolute;top: 39px;right: 19px; font-size:25px}
-.navigation__navbar--responsive .navigation__toggleicon {position: absolute;top: 39px;right: 19px;}
+.navigation__heading {margin: 12% 4% 0 30%;font-size:18px}
+.navigation__link {display: none;}
+.display--0{display:block}
+.navigation__toggleicon {cursor: pointer;display: block; position: absolute;top: 51px;right: 19px; font-size:25px}
+.navigation__navbar--responsive .navigation__toggleicon {position: absolute;top: 51px;right: 19px;}
 .navigation__navbar--responsive .navigation__link {float: none;display: block;text-align: center;border-bottom: 1px solid black}
 .navigation__li { margin-left: 0px; margin-top: 15px ;float: left; width: 100%;}
+.navigation__navbar--responsive{margin:13% 0 0 0 }
 /*   02. Header Banner styles */
-.header__left ,.header__right,.col--7,.recipe__card,.footer__history,.footer__info { width: 100%;}
-.header__right {height:395px}
-.header__bannerimg{float:left;width:100%}
-.header{margin-top:46px}
+.col--7,.recipe__card,.footer__history,.footer__info { width: 100%;}
+.header__right {width:70%}
 /*  03. Accordion styles */
 .accordion__searchtxt{display:none;}
-.accordion__togglebtn{width:89%}
+.accordion__togglebtn{width:100%}
 .accordion__list{padding-top:0}
 .border--right1{border-right:none;border-bottom: 1px solid white;}
 .accordion__sortby{margin-left:30px}
@@ -241,25 +228,20 @@ src:  url('fonts/Roboto-Regular.eot?#iefix') format('embedded-opentype'),url('fo
 .accordion__col3{width:100%}
 .accordion__sortimg{position: absolute;top:15px;right:18px }
 .accordion__search{padding:10px 38px 0 0}
-.accordion__toggle {width: 100%;margin: 2% 0 0 5%;}
+.accordion__toggle {width: 100%;margin-top:2%}
 .accordion__col3{width: 100%;float: left;margin-right: 40px;}
 /* 04.Recipe Grid styles */
-.margin--left {margin-left: 0%;}
-.recipe__image {width:100%;}
-.recipe__upper{height:17vw}
 .recipe__content{font-size: 1.36rem}
 .recipe{padding: 10px 15px 10px 0px}
 .col--7{width:100%; float:left}
 .recipe__content{padding:9px;font-size:1.2rem}
 .recipe__card{width:100%;margin:0}
-.recipe {padding: 10px 17px 10px 19px}
 /*  05. Newsletter styles */
-.news {padding: 20px;margin: 25px auto 0;}
 .newsletter__p {width: 100%;}
 .newsletter__element {width: 100%;margin: 5px 0;}
 .newsletter__fields {margin-top: 10px;}
 .newsletter__input {-webkit-appearance: none;-moz-appearance: none;appearance: none;width: 100%;box-sizing: border-box}
-.newsletter__delete {text-align:center;margin: 4% 0 2% 0}
+.newsletter__delete {text-align:center;margin-top:4%}
 .newsletter__sendbtn {margin-top: 10px;width: 100%;}
 .newsletter__addbtn {margin: 0px;width: 100%;margin: 4% 0 2% 0;}
 /* 06. footer styles */
