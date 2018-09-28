@@ -54,8 +54,10 @@ if (list.childNodes.length
   </label>
   <input  class="newsletter__input" type="text"  name="newsletter__email" value= "${obj.email}" /> 
 </div>
-<div class="newsletter__element newsletter__delete"  onclick="deleteNewsList(this)" id="delete"> 
-  <img class="newsletter__imgdel" src="images/delete.png" alt="Remove"> Remove
+<div class="newsletter__element" onclick="deleteNewsList(this)" id="delete">
+  <button class="newsletter__delete">Remove
+    <img class="newsletter__imgdel" src="images/delete.png" alt="Delete" />
+  </button>
 </div>
 <hr class="newsletter__hr">`
 list.appendChild(row);
