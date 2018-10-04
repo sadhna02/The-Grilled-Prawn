@@ -12,14 +12,11 @@
    <body>
       <!-- navigation starts -->
       <header class="navigation">
-          <div class="container">
          <nav class="navigation__navbar">
             <div class="navigation__logo">
-               <div class="clearfix">
                   <img src="images/Bitmap.png" alt="The Grilled Prawn" class="navigation__logoimg">
                   <span class="navigation__heading"> The Grilled Prawn
                   </span>
-               </div>
             </div>
             <ul class="navigation__ul" id="nav" >
                <li class="navigation__li">
@@ -34,16 +31,15 @@
                   <a class="navigation__link">DECORATIONS
                   </a>
                </li>
-               <li class="navigation__li mar--0">
-                  <a class="navigation__link">ABOUT THE GRILLED PRAWN
+               <li class="navigation__li mar--0 ">
+                  <a class="navigation__link border--0">ABOUT THE GRILLED PRAWN
                   </a>
                </li>
-               <li class="display--0">
+               <li class="navigation__toggle">
                   <a class="navigation__toggleicon" onclick="navigation()">☰
                   </a>
             </ul>
          </nav>
-        </div>
       </header>
       <!-- navigation ends -->
       <!-- header banner starts  -->
@@ -72,22 +68,24 @@
          <h1 class="accordion__heading">Our Recipes
          </h1>
          <div class="accordion__filter">
-            <div class="col--7">
-               <span class="accordion__sortby">Sort by
-               </span>
-               <select class="accordion__sortbtn" id = "accordion__sortbtn">
-                  <option value = "1">Newest first
-                  </option>
-                  <option value = "2">Oldest first
-                  </option>
-               </select>
+            <div class="accordion__col7">
+               <div class="accordion__sortby">
+                  <span class="accordion__sorttxt">Sort by
+                  </span>
+                  <select class="accordion__sortbtn" id = "accordion__sortbtn">
+                     <option value = "1">Newest first
+                     </option>
+                     <option value = "2">Oldest first
+                     </option>
+                  </select>
+               </div>
                <div class="accordion__search">
                   <img src="images/search-button.png" class="accordion__searchicon" alt="Search">
-                  <input class="accordion__searchtxt" placeholder="Search recipe" size="10" />
+                  <input class="accordion__searchtxt" placeholder="Search recipe" size="12" />
                </div>
             </div>
             <div class="accordion__toggle">
-               <button class="accordion__togglebtn" onclick="toggleAccordion()">Filter recipes by 
+               <button class="accordion__togglebtn" id="accordion__togglebtn" onclick="toggleAccordion()">Filter recipes by 
                <img src="images/minus-icon.png" alt="Filter Dropdown"
                   class="accordion__toggleimg" id="accordion__toggleimg">
                </button>
@@ -356,7 +354,7 @@
                </div>
                <div class="newsletter__element" onclick="deleteNewsList(this)" id="delete">
                   <button class="newsletter__delete">
-                      <img class="newsletter__imgdel" src="images/delete.png" alt="Delete" />Remove
+                  <img class="newsletter__imgdel" src="images/delete.png" alt="Delete" />Remove
                   </button>
                </div>
                <hr class="newsletter__hr">
