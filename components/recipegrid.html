@@ -1,143 +1,457 @@
-<!-- Recipe Grid starts-->
-    <div class="recipe">
-      <div class="recipe__card">
-        <div class="recipe__upper">
-          <span class="recipe__date">5TH MARCH 2016 
-          </span>
-          <span class="recipe__place">THAI
-          </span>
-          <p class="recipe__list-content">Thai Yellow Curry Noodles with Shiitake Mushrooms
-          </p>
-        </div>
-        <img class="recipe__image" src="images/recipe1.png" alt="Recipe">
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <title>The Grilled Prawn
+      </title>
+      <meta name="description" content="">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" type="text/css" href="css/style.css">
+   </head>
+   <body>
+      <!-- navigation starts -->
+      <header class="navigation">
+         <nav class="navigation__navbar">
+            <div class="navigation__logo">
+                  <img src="images/Bitmap.png" alt="The Grilled Prawn" class="navigation__logoimg">
+                  <span class="navigation__heading"> The Grilled Prawn
+                  </span>
+            </div>
+            <ul class="navigation__ul" id="nav" >
+               <li class="navigation__li">
+                  <a class="navigation__link active">RECIPES
+                  </a>
+               </li>
+               <li class="navigation__li">
+                  <a class="navigation__link">DRINKS
+                  </a>
+               </li>
+               <li class="navigation__li">
+                  <a class="navigation__link">DECORATIONS
+                  </a>
+               </li>
+               <li class="navigation__li mar--0 ">
+                  <a class="navigation__link border--0">ABOUT THE GRILLED PRAWN
+                  </a>
+               </li>
+               <li class="navigation__toggle">
+                  <a class="navigation__toggleicon" onclick="navigation()">☰
+                  </a>
+            </ul>
+         </nav>
+      </header>
+      <!-- navigation ends -->
+      <!-- header banner starts  -->
+      <div class="header">
+         <div class="header__left ">
+            <img src="images/bakled-polenta-with-italian-sausage.png" alt="The Grilled Prawn" class="header__bannerimg">
+         </div>
+         <div class="header__right">
+            <h3 class="header__h3">LATEST RECIPE
+            </h3>
+            <h1 class="header__h1">Baked Polenta with Cheese and Mushrooms.
+            </h1>
+            <p class="header__p">Polenta, goat cheese, Italian sausage, and cremini mushrooms. All together this will
+               make for pretty darn good side dish to a lovely salad. Go for it.
+            </p>
+            <button class="btn--1 header__btn ">
+            Go to Recipe
+            <img src="images/right-arrow.png" alt="Go To Recipe"
+               class="header__rightarrow">
+            </button>
+         </div>
       </div>
-      <div class="recipe__card">
-        <div class="recipe__upper">
-          <span class="recipe__date">17TH MARCH 2016 
-          </span>
-          <span class="recipe__place">ITALIAN
-          </span>
-          <p class="recipe__list-content">Cappellini with Cherry Tomatoes and Fresh Basil
-          </p>
-        </div>
-        <img class="recipe__image" src="images/recipe2.png" alt="Recipe">
+      <!-- header banner ends  -->
+      <!-- Recipe Accordion starts-->
+      <div class="accordion">
+         <h1 class="accordion__heading">Our Recipes
+         </h1>
+         <div class="accordion__filter">
+            <div class="accordion__col7">
+               <div class="accordion__sortby">
+                  <span class="accordion__sorttxt">Sort by
+                  </span>
+                  <select class="accordion__sortbtn" id = "accordion__sortbtn">
+                     <option value = "1">Newest first
+                     </option>
+                     <option value = "2">Oldest first
+                     </option>
+                  </select>
+               </div>
+               <div class="accordion__search">
+                  <img src="images/search-button.png" class="accordion__searchicon" alt="Search">
+                  <input class="accordion__searchtxt" placeholder="Search recipe" size="12" />
+               </div>
+            </div>
+            <div class="accordion__toggle">
+               <button class="accordion__togglebtn" id="accordion__togglebtn" onclick="toggleAccordion()">Filter recipes by 
+               <img src="images/minus-icon.png" alt="Filter Dropdown"
+                  class="accordion__toggleimg" id="accordion__toggleimg">
+               </button>
+            </div>
+         </div>
+         <div class="accordion__list" id="filter-accordion-list">
+            <div class="accordion__col3 border--right1">
+               <h3 class="accordion__h3">Food type:
+               </h3>
+               <label for="lbl-Appetisers" class="accordion__lbl">Appetisers
+               <input id="lbl-Appetisers" class="accordion__chkbox" type="checkbox" checked="checked">
+               <span class="accordion__chkmark">
+               </span>
+               </label>
+               <label for="lbl-Mains" class="accordion__lbl">Mains
+               <input id="lbl-Mains" class="accordion__chkbox" type="checkbox">
+               <span class="accordion__chkmark">
+               </span>
+               </label>
+               <label for="lbl-Desserts" class="accordion__lbl">Desserts
+               <input id="lbl-Desserts" class="accordion__chkbox" type="checkbox">
+               <span class="accordion__chkmark">
+               </span>
+               </label>
+               <label for="lbl-Special" class="accordion__lbl">Special Occasions
+               <input id="lbl-Special" class="accordion__chkbox" type="checkbox">
+               <span class="accordion__chkmark">
+               </span>
+               </label> 
+            </div>
+            <div class="accordion__col3">
+               <h3 class="accordion__h3"> Nationality:
+               </h3>
+               <label class="accordion__lbl"> Italian (34)
+               <input class="accordion__chkbox" type="checkbox" checked="checked">
+               <span class="accordion__chkmark">
+               </span>
+               </label>
+               <label class="accordion__lbl"> French (30)
+               <input class="accordion__chkbox" type="checkbox">
+               <span class="accordion__chkmark">
+               </span>
+               </label>
+               <label class="accordion__lbl">
+               Spanish (22)
+               <input class="accordion__chkbox" type="checkbox">
+               <span class="accordion__chkmark">
+               </span>
+               </label>
+               <label class="accordion__lbl">Peruvian (3)
+               <input class="accordion__chkbox" type="checkbox">
+               <span class="accordion__chkmark">
+               </span>
+               </label>
+            </div>
+            <div class="accordion__col3">
+               <h3 class="accordion__h3 hidden">Food type:
+               </h3>
+               <label class="accordion__lbl"> Chinese (18)
+               <input class="accordion__chkbox" type="checkbox" checked="checked">
+               <span class="accordion__chkmark">
+               </span>
+               </label>
+               <label class="accordion__lbl">Indian (13)
+               <input class="accordion__chkbox" type="checkbox">
+               <span class="accordion__chkmark">
+               </span>
+               </label>
+               <label class="accordion__lbl">Thai (10)
+               <input class="accordion__chkbox" type="checkbox">
+               <span class="accordion__chkmark">
+               </span>
+               </label>
+               <label class="accordion__lbl">Norwegian (4)
+               <input class="accordion__chkbox" type="checkbox">
+               <span class="accordion__chkmark">
+               </span>
+               </label>
+            </div>
+            <div class=" accordion__col3">
+               <h3 class="accordion__h3 hidden">Food type:
+               </h3>
+               <label class="accordion__lbl">Polish (2)
+               <input class="accordion__chkbox" type="checkbox" checked="checked">
+               <span class="accordion__chkmark">
+               </span>
+               </label>
+               <label class="accordion__lbl"> Danish (3)
+               <input class="accordion__chkbox" type="checkbox">
+               <span class="accordion__chkmark">
+               </span>
+               </label>
+               <label class="accordion__lbl">Belgian (7)
+               <input class="accordion__chkbox" type="checkbox">
+               <span class="accordion__chkmark">
+               </span>
+               </label>
+               <label class="accordion__lbl"> Persian (13)
+               <input class="accordion__chkbox" type="checkbox">
+               <span class="accordion__chkmark">
+               </span>
+               </label>
+            </div>
+         </div>
       </div>
-      <div class="recipe__card">
-        <div class="recipe__upper">
-          <span class="recipe__date">4TH APRIL 2016 
-          </span>
-          <span class="recipe__place">ITALIAN
-          </span>
-          <p class="recipe__list-content">Baked Turkey Sausage and Mascarpone Stuffed Shells
-          </p>
-        </div>
-        <img class="recipe__image" src="images/recipe3.png" alt="Recipe">
+      <!-- Recipe Accordion ends-->
+      <!-- Recipe Grid starts-->
+      <div class="recipe">
+         <div class="recipe__card">
+            <div class="recipe__upper">
+               <span class="recipe__date">5TH MARCH 2016 <span class="recipe__place">THAI
+               </span>
+               </span>
+               <p class="recipe__content">Thai Yellow Curry Noodles with Shiitake Mushrooms
+               </p>
+            </div>
+            <img class="recipe__image" src="images/recipe1.png" alt="Recipe">
+         </div>
+         <div class="recipe__card">
+            <div class="recipe__upper">
+               <span class="recipe__date">17TH MARCH 2016   <span class="recipe__place">ITALIAN
+               </span>
+               </span>
+               <p class="recipe__content">Cappellini with Cherry Tomatoes and Fresh Basil
+               </p>
+            </div>
+            <img class="recipe__image" src="images/recipe2.png" alt="Recipe">
+         </div>
+         <div class="recipe__card">
+            <div class="recipe__upper">
+               <span class="recipe__date">4TH APRIL 2016 <span class="recipe__place">ITALIAN
+               </span>
+               </span>
+               <p class="recipe__content">Baked Turkey Sausage and Mascarpone Stuffed Shells
+               </p>
+            </div>
+            <img class="recipe__image" src="images/recipe3.png" alt="Recipe">
+         </div>
+         <div class="recipe__card">
+            <div class="recipe__upper">
+               <span class="recipe__date">24TH MAY 2016  <span class="recipe__place">ITALIAN
+               </span>
+               </span>
+               <p class="recipe__content">Caramelised Apple and Herb Fiocchi
+               </p>
+            </div>
+            <img class="recipe__image" src="images/recipe4.png" alt="Recipe">
+         </div>
+         <div class="recipe__card">
+            <div class="recipe__upper">
+               <span class="recipe__date">25TH MAY 2016 <span class="recipe__place">SPANISH
+               </span>
+               </span>
+               <p class="recipe__content">Pumpkin Beer Cheese Soup
+               </p>
+            </div>
+            <img class="recipe__image" src="images/recipe5.png" alt="Recipe">
+         </div>
+         <div class="recipe__card">
+            <div class="recipe__upper">
+               <span class="recipe__date">22TH SEPTEMBER 2016 <span class="recipe__place">THAI
+               </span>
+               </span>
+               <p class="recipe__content">Yum Woon Sen with Shrimp (Glass noodle salad with Shrimp)
+               </p>
+            </div>
+            <img class="recipe__image" src="images/recipe6.png" alt="Recipe">
+         </div>
+         <div class="recipe__card">
+            <div class="recipe__upper">
+               <span class="recipe__date">14TH OCTOBER 2016  <span class="recipe__place">THAI
+               </span>
+               </span>
+               <p class="recipe__content">Beef Satay
+               </p>
+            </div>
+            <img class="recipe__image" src="images/recipe7.png" alt="Recipe">
+         </div>
+         <div class="recipe__card">
+            <div class="recipe__upper">
+               <span class="recipe__date">29TH OCTOBER 2016  <span class="recipe__place">FRENCH
+               </span>
+               </span>
+               <p class="recipe__content">Creamy French Onion Soup Dip in a Bread Bowl
+               </p>
+            </div>
+            <img class="recipe__image" src="images/recipe8.png" alt="Recipe">
+         </div>
+         <div class="recipe__card">
+            <div class="recipe__upper">
+               <span class="recipe__date">11TH NOVEMBER 2016 <span class="recipe__place">SPANISH
+               </span>
+               </span>
+               <p class="recipe__content">Bocadillo Bites
+               </p>
+            </div>
+            <img class="recipe__image" src="images/recipe9.png" alt="Recipe">
+         </div>
+         <div class="recipe__card">
+            <div class="recipe__upper">
+               <span class="recipe__date">12TH NOVEMBER 2016  <span class="recipe__place">SPANISH
+               </span>
+               </span>
+               <p class="recipe__content">Paella
+               </p>
+            </div>
+            <img class="recipe__image" src="images/recipe10.png" alt="Recipe">
+         </div>
+         <div class="recipe__card">
+            <div class="recipe__upper">
+               <span class="recipe__date">24TH DECEMBER 2016 <span class="recipe__place">THAI
+               </span>
+               </span>
+               <p class="recipe__content">Spicy black Bean Burger
+               </p>
+            </div>
+            <img class="recipe__image" src="images/recipe11.png" alt="Recipe">
+         </div>
+         <div class="recipe__card">
+            <div class="recipe__upper">
+               <span class="recipe__date">9TH JANUARY 2017 <span class="recipe__place">ITALIAN
+               </span>
+               </span>
+               <p class="recipe__content">Fresh Fig and Pistachio Salad
+               </p>
+            </div>
+            <img class="recipe__image" src="images/recipe12.png" alt="Recipe">
+         </div>
+         <a href="#" onclick="returntop()">
+            <div class="recipe__topnav">
+               <p class="recipe__p">Return to top
+               </p>
+               <img class="recipe__navimg" src="images/up-arrow.png" alt="up-arrow" />
+            </div>
+         </a>
       </div>
-      <div class="recipe__card">
-        <div class="recipe__upper">
-          <span class="recipe__date">24TH MAY 2016 
-          </span>
-          <span class="recipe__place">ITALIAN
-          </span>
-          <p class="recipe__list-content">Caramelised Apple and Herb Fiocchi
-          </p>
-        </div>
-        <img class="recipe__image" src="images/recipe4.png" alt="Recipe">
+      <!-- Recipe Grid ends-->
+      <!-- Newsletter starts -->
+      <div class="newsletter">
+         <div class="newsletter__content">
+            <div class="newsletter__header">
+               <h1 class="newsletter__h1">Spread the word !
+               </h1>
+               <p class="newsletter__p">Our recipes are awesome,signup to our newsletter and invite friends to join
+                  the gilled
+                  prawn cult
+               </p>
+            </div>
+            <div class="newsletter__fields">
+               <div id="newsletter__record">
+               </div>
+               <div class="newsletter__element">
+                  <label for="newsletter__name" class="newsletter__lbl">Name
+                  </label>
+                  <input id="newsletter__name" class="newsletter__input" type="text" name="newsletter__name" placeholder="Enter Name">
+               </div>
+               <div class="newsletter__element">
+                  <label for="newsletter__surname" class="newsletter__lbl">Surname
+                  </label>
+                  <input id="newsletter__surname" class="newsletter__input" type="text" name="newsletter__surname" placeholder="Enter Surname">
+               </div>
+               <div class="newsletter__element">
+                  <label for="newsletter__email" class="newsletter__lbl">Email address 
+                  </label>
+                  <input id="newsletter__email" class="newsletter__input"  type="text" name="newsletter__email" placeholder="Enter Email">
+               </div>
+               <div class="newsletter__element" onclick="deleteNewsList(this)" id="delete">
+                  <button class="newsletter__delete">
+                  <img class="newsletter__imgdel" src="images/delete.png" alt="Delete" />Remove
+                  </button>
+               </div>
+               <hr class="newsletter__hr">
+               <form id="newsletter__form">
+                  <div class="newsletter__element" >
+                     <label for="name" class="newsletter__lbl">Name
+                     </label>
+                     <input class="newsletter__input" type="text" id="name" name="name" required data-required-message="Name is required."  placeholder="Enter Name">
+                  </div>
+                  <div class="newsletter__element">
+                     <label for="surname" class="newsletter__lbl">Surname
+                     </label>
+                     <input class="newsletter__input" type="text" id="surname" name="surname" required data-required-message="SurName is required." placeholder="Enter Surname">
+                  </div>
+                  <div class="newsletter__element">
+                     <label for="email" class="newsletter__lbl">Email address 
+                     </label>
+                     <input class="newsletter__input" type="email" id="email" name="email" required data-required-message="Email is required." data-type-message="Enter a valid email address." placeholder="Enter Email">
+                  </div>
+                  <div class="newsletter__element">
+                     <button class="btn--1 newsletter__addbtn" type="submit" >Add Friend 
+                     </button>
+                  </div>
+                  <div class="newsletter__align">
+                     <button class="btn--1 newsletter__sendbtn" id="newsletter__send" onclick="sendNewsList(document.getElementById('name').value,document.getElementById('surname').value,document.getElementById('email').value)" >Send 
+                     <img class="newsletter__sendimg" src="images/right-arrow.png" alt="Right Arrow" />
+                     </button>
+                  </div>
+               </form>
+               <div id="newsletter__msg" class="newsletter__msg">More than 5 Friends are not allowed 
+               </div>
+            </div>
+         </div>
       </div>
-      <div class="recipe__card">
-        <div class="recipe__upper">
-          <span class="recipe__date">25TH MAY 2016 
-          </span>
-          <span class="recipe__place">SPANISH
-          </span>
-          <p class="recipe__list-content">Pumpkin Beer Cheese Soup
-          </p>
-        </div>
-        <img class="recipe__image" src="images/recipe5.png" alt="Recipe">
-      </div>
-      <div class="recipe__card">
-        <div class="recipe__upper">
-          <span class="recipe__date">22TH SEPTEMBER 2016
-          </span>
-          <span class="recipe__place">THAI
-          </span>
-          <p class="recipe__list-content">Yum Woon Sen with Shrimp (Glass noodle salad with Shrimp)
-          </p>
-        </div>
-        <img class="recipe__image" src="images/recipe6.png" alt="Recipe">
-      </div>
-      <div class="recipe__card">
-        <div class="recipe__upper">
-          <span class="recipe__date">14TH OCTOBER 2016 
-          </span>
-          <span class="recipe__place">THAI
-          </span>
-          <p class="recipe__list-content">Beef Satay
-          </p>
-        </div>
-        <img class="recipe__image" src="images/recipe7.png" alt="Recipe">
-      </div>
-      <div class="recipe__card">
-        <div class="recipe__upper">
-          <span class="recipe__date">29TH OCTOBER 2016 
-          </span>
-          <span class="recipe__place">FRENCH
-          </span>
-          <p class="recipe__list-content">Creamy French Onion Soup Dip in a Bread Bowl
-          </p>
-        </div>
-        <img class="recipe__image" src="images/recipe8.png" alt="Recipe">
-      </div>
-      <div class="recipe__card">
-        <div class="recipe__upper">
-          <span class="recipe__date">11TH NOVEMBER 2016 
-          </span>
-          <span class="recipe__place">SPANISH
-          </span>
-          <p class="recipe__list-content">Bocadillo Bites
-          </p>
-        </div>
-        <img class="recipe__image" src="images/recipe9.png" alt="Recipe">
-      </div>
-      <div class="recipe__card">
-        <div class="recipe__upper">
-          <span class="recipe__date">12TH NOVEMBER 2016 
-          </span>
-          <span class="recipe__place">SPANISH
-          </span>
-          <p class="recipe__list-content">Paella
-          </p>
-        </div>
-        <img class="recipe__image" src="images/recipe10.png" alt="Recipe">
-      </div>
-      <div class="recipe__card">
-        <div class="recipe__upper">
-          <span class="recipe__date">24TH DECEMBER 2016 
-          </span>
-          <span class="recipe__place">THAI
-          </span>
-          <p class="recipe__list-content">Spicy black Bean Burger
-          </p>
-        </div>
-        <img class="recipe__image" src="images/recipe11.png" alt="Recipe">
-      </div>
-      <div class="recipe__card">
-        <div class="recipe__upper">
-          <span class="recipe__date">9TH JANUARY 2017
-          </span>
-          <span class="recipe__place">ITALIAN
-          </span>
-          <p class="recipe__list-content">Fresh Fig and Pistachio Salad
-          </p>
-        </div>
-        <img class="recipe__image" src="images/recipe12.png" alt="Recipe">
-      </div>
-      <a href="#" onclick="returntop()">
-        <div class="recipe__topnav">
-          <p class="recipe__p">Return to top
-          </p>
-          <img class="recipe__navimg" src="images/up-arrow.png" alt="up-arrow" />
-        </div>
-      </a>
-    </div>
-    <!-- Recipe Grid ends-->
+      <!-- Newsletter ends -->
+      <!-- footer starts -->
+      <footer class="footer">
+         <div class="footer__history">
+            <div class="footer__col3 padding--1">
+               <h3 class="footer__h3">Our Recipes
+               </h3>
+               <p class="footer__para">All our recipes are tested thoroughly by us to make sure they’re suitable for your kitchen
+                  at home. We know many of you are concerned about healthy eating, so we send them to a
+                  qualified nutritionist for thorough analysis too.
+                  Browse our recipes now
+               </p>
+               <p class="footer__parared">Browse our recipes now
+               </p>
+               <hr class="footer__hr">
+            </div>
+            <div class="footer__col3 padding--1">
+               <h3 class="footer__h3">Grilled Praw’s History
+               </h3>
+               <p class="footer__para">The Grilled Prawn is a fictional food blog created in January 2015.
+               </p>
+               <hr class="footer__hr">
+            </div>
+            <div class="footer__col3 padding--1">
+               <h3 class="footer__h3">Tips and Tricks
+               </h3>
+               <p class="footer__para">Not sure how to do something? Don’t panic. We have plenty of tutorials for you.
+               </p>
+               <p class="footer__parared">Learn more
+               </p>
+               <hr class="footer__hr">
+            </div>
+            <div class="footer__col3 padding--1">
+               <h3 class="footer__h3">Help and Contact
+               </h3>
+               <p class="footer__para">
+                  Struggling with one of the recipes?
+               </p>
+               <p class="footer__parared"> Send us an email
+               </p>
+               <p class="footer__para">We are always happy to try new things, send us your suggestions!
+               </p>
+               <p class="footer__parared">Fill in the form
+               </p>
+               <hr class="footer__hr">
+            </div>
+         </div>
+         <div class="footer__right padding--1">
+            <p class="footer__para padding--1">
+               © The Grilled Prawn 
+            <p>
+            <p class="footer__para padding--1">
+               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed imperdiet, lectus quis interdum
+               viverra, erat mi consectetur mi, a fringilla odio risus vel augue. Mauris tempor ligula
+               fringilla magna iaculis, non vulputate tellus interdum.
+            </p>
+            <p class="footer__para padding--1">
+               The images and recipes ideas were taken from spoonforkbacon.com and the icons from Google
+               Material Icons.
+            </p>
+         </div>
+      </footer>
+      <!-- footer ends -->
+      <script src="js/app.js"></script>
+   </body>
+</html>
