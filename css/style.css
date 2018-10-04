@@ -22,41 +22,41 @@ url('fonts/Roboto-LightItalic.svg#Roboto') format('svg');font-weight:300;font-st
 @font-face {font-family: 'Roboto-LightItalic';src:  url('fonts/Roboto-LightItalic.eot');src:  url('fonts/Roboto-LightItalic.eot?#iefix')format('embedded-opentype'),url('fonts/Roboto-LightItalic.woff2') format('woff2'),url('fonts/Roboto-LightItalic.woff') format('woff'),url('fonts/Roboto-LightItalic.ttf') format('truetype'),url('fonts/Roboto-LightItalic.svg#Roboto')format('svg');}
 @font-face {font-family: 'Roboto';src:  url('fonts/Roboto-Regular.eot');
 src:  url('fonts/Roboto-Regular.eot?#iefix') format('embedded-opentype'),url('fonts/Roboto-Regular.woff2') format('woff2'),url('fonts/Roboto-Regular.woff') format('woff'),url('fonts/Roboto-Regular.ttf') format('truetype'),url('fonts/Roboto-Regular.svg#Roboto') format('svg');font-weight: 400;font-style: normal;}
+@font-face {font-family: 'Roboto-Medium';src:url('fonts/Roboto-Medium.eot');src: url('fonts/Roboto-Medium.eot?#iefix') format('embedded-opentype'),url('fonts/Roboto-Medium.woff2') format('woff2'),url('fonts/Roboto-Medium.woff') format('woff'),url('fonts/Roboto-Thin.ttf') format('truetype'),url('fonts/Roboto-Medium.svg#Roboto') format('svg');font-weight: 100;font-style: normal;}
 /*   02. common and reusable theme styles */
 * {margin: 0px;padding: 0px;box-sizing: border-box;font-family:'Roboto'}
- body {overflow-x: hidden;width: 100%;background-color: #f6f6f6}
+body {overflow-x: hidden;width: 100%;background-color: #f6f6f6}
 .btn--1 {width: 200px;padding: 10px 0; border-radius: 5px;text-align: center;letter-spacing: 5px;cursor: pointer;outline: none;font-weight: bold;font-size: 18px;border: 1px solid #ccc}
 .invalid {border:3px solid red;color: white}
 .error {color: #ddd}
-.col--7 {width: 72%;float: right}
 .header, .recipe, .newsletter, .footer, .accordion, .navigation, .navigation__navbar--responsive{clear:both}
 .padding--1 {padding: 1%}
 .active{font-weight: 700}
 .hidden{visibility: hidden}
-.margin--left {margin-left: 5%;}
 .border--right1{border-right: 1px solid white;}
-.display--0{display:none}
-.clearfix{overflow: auto;}
+.border--0{border-bottom: none}
 /*  03. Navigation styles */
+.navigation__toggle{display:none}
 .navigation {margin: 0 auto;width:90%} 
 .navigation__logo{position:relative}
-.navigation__logoimg {max-width: 100%;height: auto !important;float: left;margin-top: 1.75%;position: absolute;z-index: 501;}
-.navigation__heading {position:absolute;float:right;color: #E9474B;font-size: 20px;margin:4% 4% 0 9%;font-weight: 700;}
+.navigation__logoimg {max-width: 100%;height: auto !important;float: left;margin-top: 1.75%;z-index: 501;}
+.navigation__heading {position:absolute;float:right;color: #E9474B;font-size: 20px;margin-top:45px;font-weight: 700;}
 .navigation__ul {float: right;margin: 4% 0 0 0;}
 .navigation__li {display: inline-block;margin-right: 88px;}
 .navigation__link {color: #4A4A4A;text-decoration: none;text-transform: uppercase;font-size: 16px;cursor: pointer;font-family: 'Roboto';letter-spacing: 0.3px;}
 .navigation__toggleicon{font-size:15px;}
 .mar--0{margin-right:0;}
 /*  04. Header Banner Styles */
-.header {width: 100%;top:31px;float:left;position: relative}
+.header {width: 100%;float:left;position: relative}
 .header__rightarrow { position: relative;padding-left: 8px;}
-.header__bannerimg{width: 94%;float:left;max-width:100% !important;height:520px;display:block;}
+.header__bannerimg{float:left;max-width:100% !important;height:520px;display:block;}
 .header__right {float: left;width: 30%;height: 100%;padding-left:30px;background-color: #e9474b;position: absolute;right:0}
 .header__btn {width: 169px;border-radius: 4px;background-color: #ffffff;color: #4a4a4a;font-family: Roboto;font-size: 18px;font-weight: 700; letter-spacing: 0.13px;}
 .header__h1 {padding: 12px 0 7px 0;color: #fff;font-size: 40px;font-weight: 700;letter-spacing: 0.3px;}
 .header__h3 {padding: 43px 0 0 0 ;color: #fff;font-size: 18px;font-weight: 400;font-family: 'Roboto';letter-spacing: 0.3px;}
-.header__p {width: 326px;color: #ffffff;font-family: 'Roboto';font-weight: 400;line-height: 26px;letter-spacing: 0.3px;font-size: 16px;padding: 0 23px 33px 0;}
+.header__p {color: #ffffff;font-family: 'Roboto';font-weight: 400;line-height: 26px;letter-spacing: 0.3px;font-size: 16px;padding: 0 23px 33px 0;}
 /*  05. Accordion styles */
+.accordion__col7 {width: 72%;float: right}
 .accordion{width: 90%;margin:0 auto;overflow:hidden}
 .accordion__filter{position: relative;}
 .accordion__heading {margin: 51px 0 41px 0;font-size: 40px;font-weight: 700;letter-spacing: 0.3px;}
@@ -64,7 +64,7 @@ src:  url('fonts/Roboto-Regular.eot?#iefix') format('embedded-opentype'),url('fo
 .accordion__togglebtn {position:relative;width: 87%;border-radius: 4px 4px 0 0;background-color: rgba(233, 71, 75, 0.9);color: #fff;border: 0px;padding: 15px 111px 34px 15px;font-size: 18px;font-weight: 700;letter-spacing: 0.14px; font-family: 'Roboto', sans-serif;text-align: left}
 .accordion__toggleimg{ position: absolute;right:15px;}
 .accordion__toggle {width: 28%;float: left;}
-.accordion__sortby{float:left;margin: 10px 10px 0px 0;letter-spacing: 0.14px;}
+.accordion__sorttxt{float:left;margin: 10px 10px 0px 0;letter-spacing: 0.14px;}
 .accordion__sortbtn {background:url('../images/down-arrow.png') no-repeat 90% 50% #fff; position:relative;float: left;color: #2f363e;font-size: 16px;font-weight: 700;letter-spacing: 0.14px;margin: 0px 0px 0px 21px;padding: 15px 0px 16px 10px;width: 100%;border-radius: 4px;border: 2px solid #2f363e;background-color: #ffffff; height:auto;max-width: 192px;}
 .accordion__sortbtn::-ms-expand {	display: none; }
 .accordion__sortbtn{-webkit-appearance: none;appearance: none;}
@@ -82,16 +82,17 @@ src:  url('fonts/Roboto-Regular.eot?#iefix') format('embedded-opentype'),url('fo
 .accordion__searchtxt{border:none;font-size: 18px;font-weight: 700;letter-spacing: 0.18px;background:transparent;vertical-align:super}
 .accordion__col3{width: 22%;float: left;margin-left: 30px;}
 /*  06. Recipe Grid Styles */
+.recipe__dateplace{position: relative;}
 .recipe__image {max-width: 100%;height: auto;}
-.recipe__card { display: flex; padding:.5rem;-webkit-box-orient: vertical;-webkit-box-direction: normal;-ms-flex-direction: column;flex-direction: column;position: relative;}
+.recipe__card { display: flex;-webkit-box-orient: vertical;-webkit-box-direction: normal;-ms-flex-direction: column;flex-direction: column;position: relative;}
 .recipe {display: grid;grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));width:90%;margin:0 auto;padding: 1rem 0 1rem 0;grid-gap: 1rem;grid-auto-rows: auto;}
 .recipe__upper {padding: 0.75vw;  background: #ffffff;  display: flex;-webkit-box-orient: vertical;-webkit-box-direction: normal;-ms-flex-direction: column;flex-direction: column;-webkit-box-flex: 1;-ms-flex: 1;flex: 1;	}
-.recipe__date {font-size: 0.5rem;color:#4A4A4A;}
-.recipe__place {font-size: 0.5rem;color:#4A4A4A;margin-left: 52%;}
+.recipe__date {font-size: 0.5rem;color:#4A4A4A; float: left;}
+.recipe__place {font-size: 0.5rem;color:#4A4A4A; float:right;}
 .recipe__content {margin-top: 1vw;color: #4a4a4a;font-family: 'Roboto';font-size: 1.563rem;font-weight: 300;letter-spacing: 0.19px;}
 .recipe__topnav{margin-left:2vw}
 .recipe__p{color: #e9474b;font-family: "Roboto Medium";font-size: 18px;font-weight: 500;letter-spacing: 0.19px;float:left}
-.recipe__navimg{float:left;padding:0.5% 0 0 1%}
+.recipe__navimg{float:left;padding:1.5% 0 0 4%}
 /*  07. Newsletter Styles */
 .newsletter {padding: 45px 0 0 0;background: #e9474b}
 .newsletter__content{width:90%;margin:0 auto}
@@ -123,72 +124,73 @@ src:  url('fonts/Roboto-Regular.eot?#iefix') format('embedded-opentype'),url('fo
 /*   Media Queries  */
 @media (max-width: 1200px) {
 /*   01. Navigation styles */
-.navigation__heading{font-size:19px;margin:4% 4% 0 12%;}
+.navigation__heading{font-size:19px;}
 .navigation__li{margin-right: 40px}
 /* 02. Header Banner styles*/
-.footer__history { width: 100%;}
-.header__right{width:40%}
+.header__right{width:50%}
 /*  03. Recipe Grid styles*/
 .recipe__content{font-size: 1.36rem}
+/* 04. footer styles */
 .footer__hr{display : block;}
-.footer__right{width:100%}}
+.footer__right{width:25%}
+/* 05. Newletter Styles */
+.newsletter__h1{font-size:38px}}
 @media (max-width: 992px) {
 /*  01. Navigation styles */
-.navigation__heading {margin: 6% 4% 0 16%;}
 .navigation__ul {margin:0}
 .navigation__link {display: none;}
-.display--0{display:block}
-.navigation__toggleicon {cursor: pointer;display: block; position: absolute;top: 12%;right: 58px; font-size:25px}
-.navigation__navbar--responsive .navigation__toggleicon {position: absolute;top: 12%;right: 58px;}
+.navigation__toggle{display:block}
+.navigation__toggleicon {cursor: pointer;display: block; position: absolute;top: 35px;right: 58px; font-size:25px}
+.navigation__navbar--responsive .navigation__toggleicon {position: absolute;top: 35px;right: 58px;}
 .navigation__navbar--responsive .navigation__link {float: none;display: block;text-align: center;border-bottom: 1px solid black}
 .navigation__li { margin: 15px 0 0 0; width: 100%}
-.navigation__navbar--responsive{padding-top:12%}
-/* 02. Header Banner styles */
-.col--7{ width: 100%;}
-.header__right{width:50%}
+/* 02. Header Banner style */
+.header__h3{font-size: 16px}
+.header__h1{font-size: 37px}
+.header__p{font-size: 14px}
 /*   03. Accordion styles */
-.accordion__searchtxt{display:none;}
-.margin--left {margin-left: 0%;}
+.accordion__h3{font-size:18px}
 .accordion__togglebtn{width:39%}
-.col--7{width:100%; float:left}
-.accordion__sortby{margin-left:48px}
+.accordion__col7{width:100%; float:left}
 .accordion__sortbtn{width:43%;margin:0;padding: 9px 0 11px 10px}
-.accordion__searchtxt{display:block;float:right}
+.accordion__search {float : right; }
 .accordion__col3{width:43%}
 .accordion__sortimg{position: absolute;top:15px;right:18px }
-/*  04. Recipe Grid styles */
 .accordion__toggle {width: 100%;margin-top:2%;}
+.accordion__heading{font-size:38px}
+.accordion__searchtxt{font-size:16px}
+/*  04. Recipe Grid styles */
 .recipe__content{font-size: 1.36rem}
-.footer__col3{width:100%}
-.footer__right{width:100%}}
+/* 05. Newletter Styles */
+.newsletter__h1{font-size:36px}}
 @media (max-width: 768px)  {
 /* 01. Navigation styles */
-.navigation__heading {margin: 8% 4% 0 19%;}
-.navigation__ul {margin:2% 0 0 0}
 .navigation__link {display: none;}
-.display--0{display:block}
-.navigation__toggleicon {cursor: pointer;display: block; position: absolute;top: 12%;right: 58px; font-size:25px}
-.navigation__navbar--responsive .navigation__toggleicon {position: absolute;top: 12%;right: 58px;}
+.navigation__toggle{display:block}
+.navigation__toggleicon {cursor: pointer;display: block; position: absolute;top: 35px;right: 58px; font-size:25px}
+.navigation__navbar--responsive .navigation__toggleicon {position: absolute;top: 35px;right: 58px;}
 .navigation__navbar--responsive .navigation__link {float: none;display: block;text-align: center;border-bottom: 1px solid black}
 .navigation__li { margin-left: 0px; margin-top: 15px ;float: left; width: 100%;}
 /* 02. Header Banner styles */
-.col--7,.recipe__card,.footer__history,.footer__info { width: 100%;}
+.recipe__card,.footer__history,.footer__info { width: 100%;}
 .header__right{width:50%}
-.header{margin-top:46px}
+/* .header{margin-top:46px} */
+.header__h3{font-size: 15px}
+.header__h1{font-size: 34px}
+.header__p{font-size: 13px}
 /* 03. Accordion styles */
-.margin--left {margin-left: 0%;}
-.accordion__togglebtn{ width:89%}
+.accordion__togglebtn{ width:50%}
 .border--right1{border-right:none;border-bottom: 1px solid white;}
-.col--7{width:100%; float:left}
-.accordion__sortby{margin-left:30px}
+.accordion__col7{width:100%; float:left}
 .accordion__sortbtn{width:50%;margin:0}
-.accordion__searchtxt{display: block;float:right}
 .accordion__sortimg{position: absolute;top:19px;right:18px }
 .hidden{display:none}
 .accordion__h3{padding-top:20px}
 .accordion__toggle {width: 100%;margin-top:2%}
 .accordion__col3{width: 100%;float: left;}
 .accordion__list{padding-top:0}
+.accordion__heading{font-size:34px}
+.accordion__lbl{font-size:16px}
 /*   04. Recipe Grid styles */
 .recipe__content{font-size:1.2rem}
 /*   05. Newsletter styles */
@@ -199,51 +201,59 @@ src:  url('fonts/Roboto-Regular.eot?#iefix') format('embedded-opentype'),url('fo
 .newsletter__delete {width: 100%;margin: 4% 0 2% 0;}
 .newsletter__sendbtn {margin-top: 10px;width: 30%;}
 .newsletter__addbtn {margin: 0px;width: 100%;margin: 4% 0 2% 0;}
+.newsletter__h1{font-size:34px}
 /*  06. footer styles */
 .footer__right{width:100%}
 .footer__hr{display : block;}
 .footer{padding:0}
-.footer__right{width:100%}}
+.footer__right{width:100%}
+.footer__col3 {width: 100%;}}
 @media (max-width: 576px)   { 
 /*   01. Navigation styles */
-.navigation__heading {margin: 11% 4% 0 24%;font-size:18px}
-.navigation__link {display: none;}
-.display--0{display:block}
-.navigation__toggleicon {cursor: pointer;display: block; position: absolute;top: 12%;right: 19px; font-size:25px}
-.navigation__navbar--responsive .navigation__toggleicon {position: absolute;top: 12%;right: 19px;}
+.navigation__heading {font-size:18px}
+.navigation__link {display: none;font-size:16px}
+.navigation__toggle{display:block}
+.navigation__toggleicon {cursor: pointer;display: block; position: absolute;top: 35px;right: 19px; font-size:25px}
+.navigation__navbar--responsive .navigation__toggleicon {position: absolute;top: 35px;right: 19px;}
 .navigation__navbar--responsive .navigation__link {float: none;display: block;text-align: center;border-bottom: 1px solid black}
 .navigation__li { margin-left: 0px; margin-top: 15px ;float: left; width: 100%;}
-.navigation__navbar--responsive{margin:13% 0 0 0 }
 /*   02. Header Banner styles */
-.col--7,.recipe__card,.footer__history,.footer__info { width: 100%;}
-.header__right {width:70%}
+.recipe__card,.footer__history,.footer__info { width: 100%;}
+.header__right {width:100%;position:relative}
+.header__bannerimg{height:auto}
+.header__h3{font-size: 13px}
+.header__h1{font-size: 32px}
+.header__p{font-size: 12px}
+.header__btn{font-size: 13px}
 /*  03. Accordion styles */
-.accordion__searchtxt{display:none;}
 .accordion__togglebtn{width:100%}
+.accordion__lbl{font-size:14px}
 .accordion__list{padding-top:0}
 .border--right1{border-right:none;border-bottom: 1px solid white;}
-.accordion__sortby{margin-left:30px}
 .accordion__sortbtn{width:43%;margin:0;padding: 9px 0 11px 10px}
-.accordion__searchtxt{display: none;float:right}
 .accordion__col3{width:100%}
 .accordion__sortimg{position: absolute;top:15px;right:18px }
-.accordion__search{padding:10px 38px 0 0}
+.accordion__search {float : left; }
 .accordion__toggle {width: 100%;margin-top:2%}
 .accordion__col3{width: 100%;float: left;margin-right: 40px;}
+.accordion__heading{font-size:32px}
+.accordion__h3{font-size:16px}
 /* 04.Recipe Grid styles */
 .recipe__content{font-size: 1.36rem}
-.recipe{padding: 10px 15px 10px 0px}
-.col--7{width:100%; float:left}
+.accordion__col7{width:100%; float:left}
 .recipe__content{padding:9px;font-size:1.2rem}
 .recipe__card{width:100%;margin:0}
 /*  05. Newsletter styles */
-.newsletter__p {width: 100%;}
+.newsletter__p {width: 100%;font-size:14px}
 .newsletter__element {width: 100%;margin: 5px 0;}
 .newsletter__fields {margin-top: 10px;}
 .newsletter__input {-webkit-appearance: none;-moz-appearance: none;appearance: none;width: 100%;box-sizing: border-box}
 .newsletter__delete {width: 100%;margin-top:4%}
 .newsletter__sendbtn {margin-top: 10px;width: 100%;}
 .newsletter__addbtn {margin: 0px;width: 100%;margin: 4% 0 2% 0;}
+.newsletter__h1{font-size:32px}
+.newsletter__lbl{font-size:14px}
+.newsletter__input{font-size:16px}
 /* 06. footer styles */
 .footer__right{width:100%}
 .footer__hr{display : block;}
