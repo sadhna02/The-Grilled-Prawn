@@ -1,63 +1,67 @@
 <!-- Newsletter starts -->
-    <div class="newsletter">
-      <div class="newsletter__header">
-        <h1 class="newsletter__h1">Spread the word !
-        </h1>
-        <p class="newsletter__p">Our recipes are awesome,signup to our newsletter and invite friends to join
-          the gilled
-          prawn cult
-        </p>
-      </div>
-      <div class="newsletter__fields">
-        <div id="newsletter__record">
-        </div>
-        <div class="newsletter__element">
-          <label for="newsletter__name" class="newsletter__lbl">Name
-          </label>
-          <input id="newsletter__name" class="newsletter__input" type="text" name="newsletter__name" placeholder="Enter Name">
-        </div>
-        <div class="newsletter__element">
-          <label for="newsletter__surname" class="newsletter__lbl">Surname
-          </label>
-          <input id="newsletter__surname" class="newsletter__input" type="text" name="newsletter__surname" placeholder="Enter Surname">
-        </div>
-        <div class="newsletter__element">
-          <label for="newsletter__email" class="newsletter__lbl">Email address 
-          </label>
-          <input id="newsletter__email" class="newsletter__input"  type="text" name="newsletter__email" placeholder="Enter Email">
-        </div>
-        <div class="newsletter__element newsletter__delete" onclick="deleteNewsList(this)" id="delete">
-          <img class="newsletter__delete-img" src="images/delete.png" alt="Remove">Remove
-        </div>
-        <hr class="newsletter__hr">
-        <form id="newsletter__form">
-          <div class="newsletter__element" >
-            <label for="name" class="newsletter__lbl">Name
-            </label>
-            <input class="newsletter__input" type="text" id="name" name="name" required data-required-message="Name is required."  placeholder="Enter Name">
+<div class="newsletter">
+    <div class="newsletter__content">
+       <div class="newsletter__header">
+          <h1 class="newsletter__h1">Spread the word !
+          </h1>
+          <p class="newsletter__p">Our recipes are awesome,signup to our newsletter and invite friends to join
+             the gilled
+             prawn cult
+          </p>
+       </div>
+       <div class="newsletter__fields">
+          <div id="newsletter__record">
           </div>
           <div class="newsletter__element">
-            <label for="surname" class="newsletter__lbl">Surname
-            </label>
-            <input class="newsletter__input" type="text" id="surname" name="surname" required data-required-message="SurName is required." placeholder="Enter Surname">
+             <label for="newsletter__name" class="newsletter__lbl">Name
+             </label>
+             <input id="newsletter__name" class="newsletter__input" type="text" name="newsletter__name" placeholder="Enter Name">
           </div>
           <div class="newsletter__element">
-            <label for="email" class="newsletter__lbl">Email address 
-            </label>
-            <input class="newsletter__input" type="email" id="email" name="email" required data-required-message="Email is required." data-type-message="Enter a valid email address." placeholder="Enter Email">
+             <label for="newsletter__surname" class="newsletter__lbl">Surname
+             </label>
+             <input id="newsletter__surname" class="newsletter__input" type="text" name="newsletter__surname" placeholder="Enter Surname">
           </div>
           <div class="newsletter__element">
-            <button class="btn newsletter__addbtn" type="submit" >Add Friend 
-            </button>
+             <label for="newsletter__email" class="newsletter__lbl">Email address 
+             </label>
+             <input id="newsletter__email" class="newsletter__input"  type="text" name="newsletter__email" placeholder="Enter Email">
           </div>
-          <div class="news__align">
-            <button class="btn newsletter__sendbtn " id="news__send" onclick="sendNewsList(document.getElementById('name').value,document.getElementById('surname').value,document.getElementById('email').value)" >Send 
-              <img class="newsletter__sendimg" src="images/right-arrow.png" alt="Right Arrow" />
-            </button>
+          <div class="newsletter__element" onclick="deleteNewsList(this)" id="delete">
+             <button class="newsletter__delete">
+             <img class="newsletter__imgdel" src="images/delete.png" alt="Delete" />Remove
+             </button>
           </div>
-        </form>
-        <div id="newsletter__hide-message" class="news_hidden">More than 5 Friends are not allowed 
-        </div>
-      </div>
+          <hr class="newsletter__hr">
+          <form id="newsletter__form">
+             <div class="newsletter__element" >
+                <label for="name" class="newsletter__lbl">Name
+                </label>
+                <input class="newsletter__input" type="text" id="name" name="name" required data-required-message="Name is required."  placeholder="Enter Name">
+             </div>
+             <div class="newsletter__element">
+                <label for="surname" class="newsletter__lbl">Surname
+                </label>
+                <input class="newsletter__input" type="text" id="surname" name="surname" required data-required-message="SurName is required." placeholder="Enter Surname">
+             </div>
+             <div class="newsletter__element">
+                <label for="email" class="newsletter__lbl">Email address 
+                </label>
+                <input class="newsletter__input" type="email" id="email" name="email" required data-required-message="Email is required." data-type-message="Enter a valid email address." placeholder="Enter Email">
+             </div>
+             <div class="newsletter__element">
+                <button class="btn--1 newsletter__addbtn" type="submit" >Add Friend 
+                </button>
+             </div>
+             <div class="newsletter__align">
+                <button class="btn--1 newsletter__sendbtn" id="newsletter__send" onclick="sendNewsList(document.getElementById('name').value,document.getElementById('surname').value,document.getElementById('email').value)" >Send 
+                <img class="newsletter__sendimg" src="images/right-arrow.png" alt="Right Arrow" />
+                </button>
+             </div>
+          </form>
+          <div id="newsletter__msg" class="newsletter__msg">More than 5 Friends are not allowed 
+          </div>
+       </div>
     </div>
+ </div>
     <!-- Newsletter ends -->
