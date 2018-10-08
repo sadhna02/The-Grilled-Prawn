@@ -25,5 +25,4 @@ JavaScript
 ⦁	ES6+ is used for the functionality of newsletter.
 Images
 ⦁	If you want to host your own images, put the image file (.jpg, .png, .gif) inside the images folder.
-⦁	Then the source on an img tag will be
-⦁	<img src="/images/your_picture.jpg">
+
